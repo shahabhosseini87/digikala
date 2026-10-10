@@ -1,0 +1,17 @@
+<div class="w-full h-fit flex border rounded-4xl overflow-hidden">
+  <div class="w-full bg-white flex items-center gap-x-3 px-4">
+    <svg class="size-10 shrink-0">
+      <use href="#search"></use>
+    </svg>
+
+    <input
+      class="min-w-0 flex-1 rounded-2xl p-2"
+      type="search"
+      placeholder="جستجو در دیچیکالا"
+    />
+
+    <svg class="size-10 shrink-0">
+      <use href="#camera"></use>
+    </svg>
+  </div>
+</div>

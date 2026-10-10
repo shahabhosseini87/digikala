@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "./public/image/swiper-3/64bef867221.webp",
+      "label": "گوشی موبایل اپل iPhone 15",
+      "discount": 15,
+      "preprice": 49990000
+    },
+    {
+      "id": 2,
+      "image": "./public/image/swiper-3/64bef867221.webp",
+      "label": "گوشی موبایل سامسونگ Galaxy S24",
+      "discount": 20,
+      "preprice": 42990000
+    },
+    {
+      "id": 3,
+      "image": "./public/image/swiper-3/64bef867221.webp",
+      "label": "گوشی موبایل شیائومی Xiaomi 14",
+      "discount": 10,
+      "preprice": 36990000
+    },
+    {
+      "id": 4,
+      "image": "./public/image/swiper-3/64bef867221.webp",
+      "label": "لپ تاپ اپل MacBook Air M3",
+      "discount": 12,
+      "preprice": 89990000
+    },
+    {
+      "id": 5,
+      "image": "./public/image/swiper-3/64bef867221.webp",
+      "label": "هدفون بی سیم اپل AirPods Pro",
+      "discount": 18,
+      "preprice": 12990000
+    },
+    {
+      "id": 6,
+      "image": "./public/image/swiper-3/64bef867221.webp",
+      "label": "ساعت هوشمند سامسونگ Galaxy Watch",
+      "discount": 25,
+      "preprice": 15990000
+    },
+    {
+      "id": 7,
+      "image": "./public/image/swiper-3/64bef867221.webp",
+      "label": "هدفون بی سیم Sony WH-1000XM5",
+      "discount": 15,
+      "preprice": 18990000
+    },
+    {
+      "id": 8,
+      "image": "./public/image/swiper-3/64bef867221.webp",
+      "label": "تبلت اپل iPad Air",
+      "discount": 10,
+      "preprice": 45990000
+    }
+  ]
+}
