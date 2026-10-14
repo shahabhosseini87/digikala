@@ -1,60 +1,89 @@
 {
   "products": [
     {
-      "id": 1,
-      "image": "./public/image/swiper-3/64bef867221.webp",
-      "label": "گوشی موبایل اپل iPhone 15",
-      "discount": 15,
-      "preprice": 49990000
+      "id": "1",
+      "image": "/public/image/swiper-3/64bef867221.webp",
+      "title": "ساند بار سونی مدل HT-S20R",
+      "discount": "۲۸٪",
+      "preprice": "۶۹,۰۵۹,۲۰۰ تومان"
     },
     {
-      "id": 2,
-      "image": "./public/image/swiper-3/64bef867221.webp",
-      "label": "گوشی موبایل سامسونگ Galaxy S24",
-      "discount": 20,
-      "preprice": 42990000
+      "id": "2",
+      "image": "/public/image/swiper-3/64bef867221.webp",
+      "title": "هدفون بی‌سیم سونی مدل WH-1000XM5",
+      "discount": "۱۵٪",
+      "preprice": "۱۸,۵۰۰,۰۰۰ تومان"
     },
     {
-      "id": 3,
-      "image": "./public/image/swiper-3/64bef867221.webp",
-      "label": "گوشی موبایل شیائومی Xiaomi 14",
-      "discount": 10,
-      "preprice": 36990000
+      "id": "3",
+      "image": "/public/image/swiper-3/64bef867221.webp",
+      "title": "مانیتور گیمینگ ایسوس مدل TUF Gaming",
+      "discount": "۲۰٪",
+      "preprice": "۲۵,۰۰۰,۰۰۰ تومان"
     },
     {
-      "id": 4,
-      "image": "./public/image/swiper-3/64bef867221.webp",
-      "label": "لپ تاپ اپل MacBook Air M3",
-      "discount": 12,
-      "preprice": 89990000
+      "id": "4",
+      "image": "/public/image/swiper-3/64bef867221.webp",
+      "title": "کنسول بازی پلی‌استیشن ۵ اسلیم",
+      "discount": "۱۰٪",
+      "preprice": "۳۲,۰۰۰,۰۰۰ تومان"
     },
     {
-      "id": 5,
-      "image": "./public/image/swiper-3/64bef867221.webp",
-      "label": "هدفون بی سیم اپل AirPods Pro",
-      "discount": 18,
-      "preprice": 12990000
+      "id": "5",
+      "image": "/public/image/swiper-3/64bef867221.webp",
+      "title": "کیبورد مکانیکال گیمینگ لاجیتک",
+      "discount": "۲۵٪",
+      "preprice": "۶,۵۰۰,۰۰۰ تومان"
     },
     {
-      "id": 6,
-      "image": "./public/image/swiper-3/64bef867221.webp",
-      "label": "ساعت هوشمند سامسونگ Galaxy Watch",
-      "discount": 25,
-      "preprice": 15990000
+      "id": "6",
+      "image": "/public/image/swiper-3/64bef867221.webp",
+      "title": "ماوس گیمینگ ریزر مدل DeathAdder",
+      "discount": "۱۸٪",
+      "preprice": "۴,۲۰۰,۰۰۰ تومان"
     },
     {
-      "id": 7,
-      "image": "./public/image/swiper-3/64bef867221.webp",
-      "label": "هدفون بی سیم Sony WH-1000XM5",
-      "discount": 15,
-      "preprice": 18990000
+      "id": "7",
+      "image" : "/public/image/swiper-3/64bef867221.webp",
+      "title": "میکروفون استودیویی هایپرایس",
+      "discount": "۱۲٪",
+      "preprice": "۸,۹۰۰,۰۰۰ تومان"
     },
     {
-      "id": 8,
-      "image": "./public/image/swiper-3/64bef867221.webp",
-      "label": "تبلت اپل iPad Air",
-      "discount": 10,
-      "preprice": 45990000
+      "id": "8",
+      "image" : "/public/image/swiper-3/64bef867221.webp",
+      "title": "لپ‌تاپ ۱۵ اینچی ایسوس مدل ROG",
+      "discount": "۸٪",
+      "preprice": "۸۵,۰۰۰,۰۰۰ تومان"
+    },
+    {
+      "id": "9",
+      "image" : "/public/image/swiper-3/64bef867221.webp",
+      "title": "اسپیکر بلوتوثی جی‌بی‌ال مدل Charge 5",
+      "discount": "۲۲٪",
+      "preprice": "۹,۲۰۰,۰۰۰ تومان"
+    },
+    {
+      "id": "10",
+      "image" : "/public/image/swiper-3/64bef867221.webp",
+      "title": "ساعت هوشمند اپل واچ سری ۹",
+      "discount": "۱۴٪",
+      "preprice": "۲۸,۰۰۰,۰۰۰ تومان"
+    },
+    {
+      "id": "11",
+      "image" : "/public/image/swiper-3/64bef867221.webp",
+      "title": "تبلت اپل مدل آیپد پرو",
+      "discount": "۵٪",
+      "preprice": "۶۲,۰۰۰,۰۰۰ تومان"
+    },
+    {
+      "id": "12",
+      "image" : "/public/image/swiper-3/64bef867221.webp",
+      "title": "هارد اکسترنال وسترن دیجیتال ۴ ترابایت",
+      "discount": "۳۰٪",
+      "preprice": "۷,۸۰۰,۰۰۰ تومان"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

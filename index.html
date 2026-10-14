@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
     <title>digikala</title>
-    <script src="./src/main.js" defer></script>
+    <script type="module" src="./src/main.js" defer></script>
   </head>
   <body class="h-2000">
     <svg class="hidden">
@@ -83,9 +83,44 @@
         alt="دیجیتالی‌های کاربردی"
       />
     </div>
-    <!-- top swiper ( lit )-->
-    <div class="w-full h-20 bg-red-600 mt-2 flex justify-center items-center">
-      lit components
+    <!-- swiper-1 -->
+    <div
+      class="w-full h-fit p-2 bg-red-600 mt-2 flex justify-center gap-x-5 items-center relative swiper-1"
+    >
+      <div
+        class="min-w-14 flex-1 h-25 p-3 bg-amber-300 sticky right-0 rounded-xl"
+      >
+        <img
+          class="size-full object-cover"
+          src="./public/image/swiper-1/55189.svg"
+          alt="سرویس ها"
+        />
+      </div>
+      <div class="swiper mySwiper-1">
+        <div class="swiper-wrapper bg-red-400">
+          <div class="swiper-slide min-w-16 flex-1 !h-25">
+            <img src="./public/image/swiper-1/352.png" alt="دیجیکالا" />
+            <span>سوپرمارکت</span>
+          </div>
+          <div class="swiper-slide min-w-16 flex-1 !h-25">
+            <img src="./public/image/swiper-1/352.png" alt="دیجیکالا" />
+            <span>سوپرمارکت</span>
+          </div>
+          <div class="swiper-slide min-w-16 flex-1 !h-25">
+            <img src="./public/image/swiper-1/352.png" alt="دیجیکالا" />
+            <span>سوپرمارکت</span>
+          </div>
+          <div class="swiper-slide min-w-16 flex-1 !h-25">
+            <img src="./public/image/swiper-1/352.png" alt="دیجیکالا" />
+            <span>سوپرمارکت</span>
+          </div>
+          <div class="swiper-slide min-w-16 flex-1 !h-25">
+            <img src="./public/image/swiper-1/352.png" alt="دیجیکالا" />
+            <span>سوپرمارکت</span>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
     <!-- search bar -->
     <div
@@ -149,12 +184,10 @@
     </div>
 
     <!-- choose city -->
-
     <button
       type="button"
       id="locationTrigger"
-      class="mt-1 mb-0 flex gap-1 items-center relative transition-all duration-100 overscroll-none py-1 cursor-pointer"
-      style="color: rgb(51, 51, 51)"
+      class="mt-1 w-full flex gap-1 items-center relative transition-all duration-100 overscroll-none py-1 cursor-pointer bg-amber-900"
     >
       <div
         class="flex items-center justify-between gap-1 text-body-1-compact h-6"
@@ -174,33 +207,46 @@
     </button>
 
     <!-- main -->
-    <main class="w-full h-fit">
+    <main class="w-full h-fit lg:w-10/12 mx-auto">
       <!-- swiper sticky container -->
-      <div class="w-full h-25 bg-yellow-950 relative mt-5">
+      <div class="w-full h-fit bg-yellow-950 relative mt-5">
         <!-- swiper-2 -->
-        <div
-          class="w-full h-20 bg-purple-700 sticky left-0 right-0 top-20 z-1 swiper-2"
-        >
-          <div class="swiper mySwiper">
+        <div class="w-full h-fit bg-purple-700">
+          <div class="swiper mySwiper-2 w-full h-[180px] lg:h-[400px]">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div
+                class="swiper-slide text-center text-lg bg-[#444] flex justify-center items-center"
+              >
                 <img
-                  class="size-full object-cover rounded-md"
+                  class="size-full object-cover"
                   src="./public/image/swiper-2/4fa2bad30958031215a123144cbaee0e4bc224be_1790521247.webp"
                   alt="هرجا که تویی"
                 />
               </div>
-              <div class="swiper-slide">
+              <div
+                class="swiper-slide text-center text-lg bg-[#444] flex justify-center items-center"
+              >
                 <img
-                  class="size-full object-cover rounded-md"
-                  src="./public/image/swiper-1/4fa2bad30958031215a123144cbaee0e4bc224be_1790521247.webp"
+                  class="size-full object-cover"
+                  src="./public/image/swiper-2/4fa2bad30958031215a123144cbaee0e4bc224be_1790521247.webp"
                   alt="هرجا که تویی"
                 />
               </div>
-              <div class="swiper-slide">
+              <div
+                class="swiper-slide text-center text-lg bg-[#444] flex justify-center items-center"
+              >
                 <img
-                  class="size-full object-cover rounded-md"
-                  src="./public/image/swiper-1/4fa2bad30958031215a123144cbaee0e4bc224be_1790521247.webp"
+                  class="size-full object-cover"
+                  src="./public/image/swiper-2/4fa2bad30958031215a123144cbaee0e4bc224be_1790521247.webp"
+                  alt="هرجا که تویی"
+                />
+              </div>
+              <div
+                class="swiper-slide text-center text-lg bg-[#444] flex justify-center items-center"
+              >
+                <img
+                  class="size-full object-cover"
+                  src="./public/image/swiper-2/4fa2bad30958031215a123144cbaee0e4bc224be_1790521247.webp"
                   alt="هرجا که تویی"
                 />
               </div>
@@ -210,27 +256,28 @@
           </div>
         </div>
       </div>
-      <!-- swiper-2 CRUD -->
-      <section class="mt-5 w-full bg-primary-red">
+      <!-- amazing swiper CRUD -->
+      <section
+        class="mt-5 max-h- w-full bg-teal-500 flex flex-col lg:flex-row items-center overflow-hidden rounded-xl shadow-md"
+      >
         <div
-          class="mx-auto flex w-full items-center justify-center gap-2 p-2"
+          class="w-full lg:w-60 bg-amber-400 shrink-0 flex lg:flex-col items-center justify-between lg:justify-center p-4 gap-4 text-white"
           dir="rtl"
         >
-          <!-- Percentage -->
-          <div class="shrink-0">
+          <!-- درصد و آیکون -->
+          <div class="hidden lg:block">
             <img
-              class="size-8"
+              class="size-16 object-contain"
               src="./public/image/swiper-3/24651.svg"
               alt=""
               aria-hidden="true"
             />
           </div>
 
-          <!-- Amazing + Countdown -->
-          <div class="flex shrink-0 items-center gap-4">
-            <!-- Amazing logo -->
+          <!-- لوگوی شگفت‌انگیز + تایمر -->
+          <div class="flex items-center lg:flex-col gap-4">
             <img
-              class="h-10 w-20 object-contain"
+              class="h-12 w-28 object-contain"
               src="./public/image/swiper-3/e0c05f5d67bf71be7605ec22cb3ee6be57d43e94_1746354561.svg"
               alt="شگفت‌انگیز"
             />
@@ -243,21 +290,17 @@
             >
               <div
                 id="hours"
-                class="grid size-8 place-items-center rounded bg-red-400 text-sm font-bold"
+                class="grid size-7 place-items-center rounded bg-white text-slate-900 text-xs font-bold"
               ></div>
-
               <span class="font-bold text-white">:</span>
-
               <div
                 id="minutes"
-                class="grid size-8 place-items-center rounded bg-red-400 text-sm font-bold"
+                class="grid size-7 place-items-center rounded bg-white text-slate-900 text-xs font-bold"
               ></div>
-
               <span class="font-bold text-white">:</span>
-
               <div
                 id="seconds"
-                class="grid size-8 place-items-center rounded bg-red-400 text-sm font-bold"
+                class="grid size-7 place-items-center rounded bg-white text-slate-900 text-xs font-bold"
               ></div>
             </div>
           </div>
@@ -265,26 +308,61 @@
           <!-- View all -->
           <a
             href="#"
-            class="shrink-0 rounded-2xl text-white px-4 py-2 text-sm font-medium"
+            class="flex items-center gap-1 bg-white p-2 rounded-xl text-[#ef394e] text-xs font-bold hover:bg-slate-100 transition-all"
           >
-            مشاهده همه
+            <span>مشاهده همه</span>
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
           </a>
         </div>
-        <!-- swiper-container -->
-        <div id="swiper-container " class="w-full h-fit p-2 bg-amber-400 amazing-swiper">
-           <div class="swiper amzing-swiper">
-      <div class="swiper-wrapper">
-        <div class="crud-swiper-slide"></div>
-        <div class="crud-swiper-slide"></div>
-        <div class="crud-swiper-slide"></div>
-        <div class="crud-swiper-slide"></div>
-        <div class="crud-swiper-slide"></div>
-        <div class="crud-swiper-slide  "></div>
-      </div>
-    </div>
+        <!-- swiper-3 (crud products) -->
+        <div class="w-full bg-amber-950 p-5">
+          <div class="swiper mySwiper-3">
+            <div class="swiper-wrapper swiper-3-wrapper"></div>
+          </div>
         </div>
       </section>
+
+      <!-- grid images -->
+      <div class="w-full h-fit grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
+        <div class="size-fit rounded-xl overflow-hidden">
+          <img
+            title="نسکافه"
+            src="./public/image/banner/09801.webp"
+            alt="نسکافه"
+          />
+        </div>
+        <div class="size-fit rounded-xl overflow-hidden">
+          <img title="سریتا" src="./public/image/banner/260.webp" alt="سریتا" />
+        </div>
+        <div class="size-fit rounded-xl overflow-hidden">
+          <img
+            title="ورزش در خانه"
+            src="./public/image/banner/511.webp"
+            alt="ورزش در خانه"
+          />
+        </div>
+        <div class="size-fit rounded-xl overflow-hidden">
+          <img
+            title="کالای سوپرمارکتی خارجی"
+            src="./public/image/banner/9638.webp"
+            alt="کالای سوپرمارکتی خارجی"
+          />
+        </div>
+      </div>
     </main>
+    
 
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
   </body>

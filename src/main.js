@@ -1,16 +1,45 @@
+////////////////////// swiper-1 ///////////////////////////
+const swiper_1 = new Swiper(".mySwiper-1", {
+  slidesPerView: 4,
+  spaceBetween: 15,
+  watchOverflow: true,
+  grabCursor: true,
+  observer: true,
+  observeParents: true,
+
+  pagination: {
+    el: ".mySwiper .swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+
 ////////////////////// swiper-2 ///////////////////////////
-const swiper_2 = new Swiper(".mySwiper", {
+const swiper_2 = new Swiper(".mySwiper-2", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
 
-///// discount count down //////////////////////////////////
+////////////////////////// discount count down //////////////////////////////////
 const hoursEl = document.getElementById("hours"),
   minutesEl = document.getElementById("minutes"),
   secondsEl = document.getElementById("seconds");
-
 let totalSeconds = 8 * 3600 + 12 * 60 + 12;
 
 function updateCountdown() {
@@ -37,156 +66,267 @@ updateCountdown();
 const timerInterval = setInterval(updateCountdown, 1000);
 
 const API_BASE = "http://localhost:3000";
+let currentProducts = [];
+let currentCategoryProducts = [];
 
-///////////////////////////////// amazing swiper ///////////////////////
-const swiper = new Swiper(".amzing-swiper", {
+////////////////////////////////////////////////// swiper-3 ////////////////////////////////////////////////
+const swiper_3 = new Swiper(".mySwiper-3", {
   slidesPerView: 3,
-  spaceBetween: 20,
-  watchOverflow: true,
+  spaceBetween: 30,
   observer: true,
   observeParents: true,
-  grabCursor: true,
+
+  navigation: {
+    nextEl: ".mySwiper-3 .swiper-button-next",
+    prevEl: ".mySwiper-3 .swiper-button-prev",
+  },
+
   breakpoints: {
-    640: { slidesPerView: 4, spaceBetween: 20 },
-    1024: { slidesPerView: 7, spaceBetween: 12 },
+    0: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 7,
+      spaceBetween: 5,
+    },
   },
 });
 
-/**
- * دریافت لیست کارت‌ها از سرور به روش حرفه‌ای
- * @param {AbortSignal} [signal] - برای لغو درخواست در صورت نیاز
- * @returns {Promise<Array>} آرایه محصولات
- */
-async function fetchCards(signal) {
+/////////////////////////////////////////////////  my fetch cards ///////////////////////////////
+async function request(path, { method = "GET", body, signal } = {}) {
+  const response = await fetch(API_BASE + path, {
+    method,
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+    body: body ? JSON.stringify(body) : undefined,
+    signal,
+  });
+
+  if (!response.ok) {
+    const message = await response.text();
+    throw new Error(`${response.status}: ${message}`);
+  }
+
+  if (response.status === 204) return null;
+
+  return await response.json();
+}
+
+/////////////  using request function ///////////////////
+// await request("/users", { method: "POST", body: { name: "سارا" } });
+
+/////////////////////////////////// render cards ///////////////////
+async function renderCards() {
   try {
-    const response = await fetch(`${API_BASE}/products`, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-      signal,
-    });
+    const products = await request("/products");
 
-    if (!response.ok) {
-      throw new Error(`خطا در سرور: ${response.status} ${response.statusText}`);
-    }
-
-    const result = await response.json();
-    const products = result.data || result;
-
-    renderCards(products);
-  } catch (error) {
-    if (error.name === "AbortError") {
-      console.info("درخواست دریافت کارت‌ها لغو شد.");
+    if (!products || products.length === 0) {
+      console.warn("هیچ محصولی یافت نشد.");
       return;
     }
-    console.error("خطا در دریافت کارت‌ها:", error.message);
+
+    const swiperWrapper = document.querySelector(".swiper-3-wrapper");
+
+    if (swiperWrapper) {
+      swiperWrapper.innerHTML = "";
+
+      products.forEach((product) => {
+        const cardElement = createCard(product);
+        swiperWrapper.appendChild(cardElement);
+      });
+
+      swiper_3.update();
+    }
+  } catch (error) {
+    console.error("خطا در بارگذاری محصولات:", error);
   }
 }
 
-//////////////////////////////////////////////////////////////////////////
-// ----------------------- rendering cards -----------------
-//////////////////////////////////////////////////////////////////////////
-function renderCards(cards) {
-  if (!cards || cards.length === 0) {
-    console.warn("هیچ محصولی برای نمایش وجود ندارد.");
-    return;
+///////////////////////////////////// create card /////////////////////////////
+function createCard(product) {
+  const swiperSlide = document.createElement("div");
+  swiperSlide.className = "swiper-slide";
+
+  const cardDiv = document.createElement("div");
+  cardDiv.className =
+    "w-full bg-white border border-slate-100  p-2 flex flex-col items-stretch gap-2 shadow-sm hover:shadow-md transition-all cursor-pointer";
+  const imgContainer = document.createElement("div");
+  imgContainer.className =
+    "w-full h-40 flex justify-center items-center relative";
+
+  const img = document.createElement("img");
+  img.src = product.image || "./public/image/product.jpg";
+  img.alt = product.title || "تصویر محصول";
+  img.className = "w-full h-full object-contain";
+
+  imgContainer.appendChild(img);
+
+  const titleH3 = document.createElement("h3");
+  titleH3.className =
+    "text-xs font-medium text-slate-800 line-clamp-2 leading-relaxed min-h-[4rem]";
+  titleH3.textContent = product.title;
+
+  const priceSection = document.createElement("div");
+  priceSection.className = "flex flex-col gap-1 mt-auto bg-amber-300";
+
+  const discountRow = document.createElement("div");
+  discountRow.className =
+    "flex items-center justify-end bg-blue-600 gap-4 bg-amber-900";
+
+  const discountBadge = document.createElement("span");
+  discountBadge.className =
+    "bg-[#ef394e] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full";
+  discountBadge.textContent = `${product.discount}`;
+
+  const oldPriceSpan = document.createElement("span");
+  oldPriceSpan.className = "text-slate-400 text-xs line-through font-normal";
+  oldPriceSpan.textContent = product.preprice;
+
+  discountRow.appendChild(discountBadge);
+  discountRow.appendChild(oldPriceSpan);
+
+  const finalPriceRow = document.createElement("div");
+  finalPriceRow.className =
+    "flex items-center justify-end bg-red-600 gap-1 text-slate-900";
+
+  const priceSpan = document.createElement("span");
+  priceSpan.className = "text-xl";
+  priceSpan.textContent = +oldPriceSpan - +discountBadge;
+
+  const currencySpan = document.createElement("span");
+  currencySpan.className = "text-lg font-bold text-slate-600";
+  currencySpan.textContent = "تومان";
+
+  const btnContainers = document.createElement("div");
+  btnContainers.className = "w-full h-fit bg-red-600 p-1 flex gap-3";
+
+  const editBtn = document.createElement("button");
+  editBtn.className =
+    "p-2 bg-green-600 cursor-pointer rounded-xl hover:bg-green-400 transition-all";
+  editBtn.textContent = "ویرایش";
+
+  const deleteBtn = document.createElement("button");
+  deleteBtn.className =
+    "p-2 bg-pink-600 cursor-pointer rounded-xl hover:bg-pink-400 transition-all";
+  deleteBtn.textContent = "حذف";
+
+  editBtn.addEventListener("click", () => startEdit(product));
+  deleteBtn.addEventListener("click", () => startDelete());
+
+  finalPriceRow.appendChild(priceSpan);
+  finalPriceRow.appendChild(currencySpan);
+
+  priceSection.appendChild(discountRow);
+  priceSection.appendChild(finalPriceRow);
+
+  btnContainers.appendChild(editBtn);
+  btnContainers.appendChild(deleteBtn);
+
+  cardDiv.appendChild(imgContainer);
+  cardDiv.appendChild(titleH3);
+  cardDiv.appendChild(priceSection);
+  cardDiv.appendChild(btnContainers);
+
+  swiperSlide.appendChild(cardDiv);
+
+  return swiperSlide;
+}
+//////////////////////// start edit function /////////////////////////////
+function startEdit(product) {
+  const makeSure = document.querySelector(".popout");
+  if (makeSure) return;
+
+  const popOut = document.createElement("form");
+  popOut.className =
+    "w-120 h-fit bg-red-600 flex flex-col justify-center gap-y-5 p-8 fixed top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2 z-50 popout";
+  document.body.appendChild(popOut);
+
+  const imageLabel = document.createElement("label"),
+    imageUrl = document.createElement("input"),
+    titleLabel = document.createElement("label"),
+    titleInput = document.createElement("input"),
+    discountLabel = document.createElement("label"),
+    discountInput = document.createElement("input"),
+    prePriceLabel = document.createElement("label"),
+    prePrice = document.createElement("input"),
+    mainPriceLabel = document.createElement("label"),
+    mainPriceInput = document.createElement("input"),
+    submitBtn = document.createElement("button");
+
+  imageLabel.textContent = "آدرس تصویر : ";
+  titleLabel.textContent = "عنوان : ";
+  discountLabel.textContent = "مقدار تخفیف : ";
+  prePriceLabel.textContent = "قیمت قبلی : ";
+  mainPriceLabel.textContent = " محاسبه ی قیمت محصول :   ";
+
+  imageLabel.htmlFor = "imageUrl";
+  titleLabel.htmlFor = "titleInput";
+  discountLabel.htmlFor = "discountInput";
+  prePriceLabel.htmlFor = "prePrice";
+  mainPriceLabel.htmlFor = "mainPriceInput";
+
+  imageUrl.type = "url";
+  titleInput.type = "text";
+  discountInput.type = "text";
+  prePrice.type = "text";
+  mainPriceInput.type = "text";
+  submitBtn.type = "submit";
+
+  imageUrl.id = "imageUrl";
+  titleInput.id = "titleInput";
+  discountInput.id = "discountInput";
+  prePrice.id = "prePrice";
+  mainPriceInput.id = "mainPriceInput";
+
+  imageUrl.className = "w-full border p-2 rounded-xl bg-white";
+  titleInput.className = "w-full border p-2 rounded-xl bg-white";
+  discountInput.className = "w-full border p-2 rounded-xl bg-white";
+  prePrice.className = "w-full border p-2 rounded-xl bg-white";
+  mainPriceInput.className = "w-full border p-2 rounded-xl bg-slate-100";
+
+  submitBtn.className =
+    "bg-green-200 px-4 py-2 rounded-xl cursor-pointer hover:bg-green-100 transition-all ";
+
+  imageUrl.value = product.image || "";
+  titleInput.value = product.title || "";
+  discountInput.value = product.discount || "";
+  prePrice.value = product.preprice || "";
+
+  function updateFinalPrice() {
+    const rawPrePrice = Number(String(prePrice.value || 0).replace(/,/g, ""));
+    const rawDiscount = Number(String(discountInput.value || 0).replace(/[%٪]/g, "").replace(/,/g, ""));
+    
+    const discountAmount = (rawPrePrice * rawDiscount) / 100;
+    const calculatedPrice = rawPrePrice - discountAmount;
+    
+    mainPriceInput.value = isNaN(calculatedPrice) ? 0 : Math.round(calculatedPrice);
   }
 
-  cards.forEach((cardData) => {
-    // ۱. ساخت اسلاید استاندارد برای سوایپر
-    const slide = document.createElement("div");
-    slide.className = "swiper-slide crud-swiper-slide";
-    slide.setAttribute("data-id", cardData.id);
+  updateFinalPrice();
 
-    // ۲. ساخت محتوای داخل کارت با استفاده از تابع createCard
-    const cardContent = createCard(cardData);
-    slide.appendChild(cardContent);
+  prePrice.addEventListener("input", updateFinalPrice);
+  discountInput.addEventListener("input", updateFinalPrice);
 
-    // ۳. اضافه کردن تمیز اسلاید به سوایپر
-    swiper.appendSlide(slide);
-  });
+  submitBtn.textContent = "تایید";
+  
+  popOut.appendChild(imageLabel);
+  popOut.appendChild(imageUrl);
+  popOut.appendChild(titleLabel);
+  popOut.appendChild(titleInput);
+  popOut.appendChild(discountLabel);
+  popOut.appendChild(discountInput);
+  popOut.appendChild(prePriceLabel);
+  popOut.appendChild(prePrice);
+  popOut.appendChild(mainPriceLabel);
+  popOut.appendChild(mainPriceInput);
+  popOut.appendChild(submitBtn);
 }
 
-//////////////////////////////////////////////////////////////////////////
-// ----------------------- creating cards -----------------
-//////////////////////////////////////////////////////////////////////////
-function createCard(card) {
-  const container = document.createElement("div");
-  container.className = "card-content p-2 bg-red-900 border rounded shadow flex flex-col items-center gap-y-2";
-
-  const image = document.createElement("img"); // اصلاح تگ image به img
-  image.src = card.image || "default.jpg";
-  image.className = "w-32 h-32 object-cover mb-2";
-
-  const title = document.createElement("h3");
-  title.textContent = card.title || "محصول بدون نام";
-  title.className = " mb-2";
-
-  const prePricesContainer = document.createElement("div");
-  prePricesContainer.className = "w-full bg-blue-600 p-2 flex justify-between items-center text-white";
-
-  const prePrice = document.createElement("span");
-  prePrice.textContent = `${card.preprice} `;
-  prePrice.className = "line-through text-gray-200";
-
-  const discountContainer = document.createElement("div");
-  discountContainer.className = "bg-red-600 px-2 py-1 rounded text-xs";
-  discountContainer.textContent = `${card.discount}% `;
-
-  prePricesContainer.appendChild(discountContainer);
-  prePricesContainer.appendChild(prePrice);
-
-  const lastPriceContainer = document.createElement("div");
-  lastPriceContainer.className = "w-full gap-5  bg-yellow-600 text-white flex justify-center ";
-  
-  const finalPrice = card.preprice - (card.preprice * (card.discount / 100));
-  const lastPrice = document.createElement("span");
-  lastPrice.textContent = ` ${finalPrice} تومان`;
-  
-
-
-  const btnContainer = document.createElement("div")
-  btnContainer.className="w-full bg-teal-600 flex justify-center gap-x-5"
-
-
-  const editBtn = document.createElement("button")
-  editBtn.className="p-2 bg-yellow-600 rounded-xl hover:bg-yellow-900 transition-all cursor-pointer"
-  editBtn.textContent="ویرایش"
-
-
-  
-
-  const deleteBtn = document.createElement("button")
-  deleteBtn.className="p-2 bg-red-600 rounded-xl hover:bg-red-900 transition-all cursor-pointer"
-  deleteBtn.textContent="حذف "
-  
-  btnContainer.appendChild(editBtn)
-  btnContainer.appendChild(deleteBtn)
-
-
-
-
-
-  lastPriceContainer.appendChild(lastPrice);
-
-  // سرهم کردن اجزای کارت درون کانتینر اصلی
-  container.appendChild(image);
-  container.appendChild(title);
-  container.appendChild(prePricesContainer);
-  container.appendChild(lastPriceContainer);
-  container.appendChild(btnContainer);
-
-
-  return container;
-}
-
-// اجرای اولیه برای دریافت و نمایش محصولات
-const controller = new AbortController();
-fetchCards(controller.signal);
-
-
-
-/*
- when edit btn and delete btn are clicked there would be a pop out and if the user hadnt logged in , he cant edit or delete the card .
- 
-*/
+renderCards();
