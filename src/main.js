@@ -27,7 +27,6 @@ const swiper_1 = new Swiper(".mySwiper-1", {
     },
   },
 });
-
 ////////////////////// swiper-2 ///////////////////////////
 const swiper_2 = new Swiper(".mySwiper-2", {
   navigation: {
@@ -35,13 +34,13 @@ const swiper_2 = new Swiper(".mySwiper-2", {
     prevEl: ".swiper-button-prev",
   },
 });
-
 ////////////////////////// discount count down //////////////////////////////////
 const hoursEl = document.getElementById("hours"),
   minutesEl = document.getElementById("minutes"),
   secondsEl = document.getElementById("seconds");
 let totalSeconds = 8 * 3600 + 12 * 60 + 12;
-
+let timerInterval = null;
+///////////////////////// count down /////////////////////
 function updateCountdown() {
   if (totalSeconds <= 0) {
     clearInterval(timerInterval);
@@ -61,14 +60,9 @@ function updateCountdown() {
 
   totalSeconds--;
 }
-
 updateCountdown();
-const timerInterval = setInterval(updateCountdown, 1000);
-
+timerInterval = setInterval(updateCountdown, 1000);
 const API_BASE = "http://localhost:3000";
-let currentProducts = [];
-let currentCategoryProducts = [];
-
 ////////////////////////////////////////////////// swiper-3 ////////////////////////////////////////////////
 const swiper_3 = new Swiper(".mySwiper-3", {
   slidesPerView: 3,
@@ -97,7 +91,7 @@ const swiper_3 = new Swiper(".mySwiper-3", {
   },
 });
 
-/////////////////////////////////////////////////  my fetch cards ///////////////////////////////
+/////////////////////////////////////////////////  request helper ///////////////////////////////
 async function request(path, { method = "GET", body, signal } = {}) {
   const response = await fetch(API_BASE + path, {
     method,
@@ -119,31 +113,47 @@ async function request(path, { method = "GET", body, signal } = {}) {
   return await response.json();
 }
 
-/////////////  using request function ///////////////////
-// await request("/users", { method: "POST", body: { name: "سارا" } });
+//////////////// change data to number //////////////////////
+function toNumber(value) {
+  const cleaned = String(value ?? "")
+    .replace(/[۰-۹]/g, (d) => d.charCodeAt(0) - 1776)
+    .replace(/[٠-٩]/g, (d) => d.charCodeAt(0) - 1632)
+    .replace(/٫/g, ".")
+    .replace(/[^\d.]/g, "");
+  const num = parseFloat(cleaned);
+  return isNaN(num) ? 0 : num;
+}
+///////////// calculate the percent ///////////
+function stripPercent(value) {
+  return String(value ?? "").replace(/[%٪]/g, "");
+}
 
-/////////////////////////////////// render cards ///////////////////
+//////////// final price //////////////
+function calcFinalPrice(prePrice, discount) {
+  const price = toNumber(prePrice);
+  const off = toNumber(discount);
+
+  const discountAmount = (price * off) / 100;
+  return Math.max(0, Math.round(price - discountAmount));
+}
+
+/////////////////////////////////// render cards /////////
 async function renderCards() {
+  const swiperWrapper = document.querySelector(".swiper-3-wrapper");
+  if (!swiperWrapper) return;
+
   try {
-    const products = await request("/products");
+    const products = (await request("/products")) || [];
 
-    if (!products || products.length === 0) {
-      console.warn("هیچ محصولی یافت نشد.");
-      return;
-    }
+    swiperWrapper.innerHTML = "";
 
-    const swiperWrapper = document.querySelector(".swiper-3-wrapper");
+    if (products.length === 0) console.warn("هیچ محصولی یافت نشد.");
 
-    if (swiperWrapper) {
-      swiperWrapper.innerHTML = "";
+    [...products].reverse().forEach((product) => {
+      swiperWrapper.appendChild(createCard(product));
+    });
 
-      products.forEach((product) => {
-        const cardElement = createCard(product);
-        swiperWrapper.appendChild(cardElement);
-      });
-
-      swiper_3.update();
-    }
+    swiper_3.update();
   } catch (error) {
     console.error("خطا در بارگذاری محصولات:", error);
   }
@@ -152,181 +162,192 @@ async function renderCards() {
 ///////////////////////////////////// create card /////////////////////////////
 function createCard(product) {
   const swiperSlide = document.createElement("div");
-  swiperSlide.className = "swiper-slide";
+  swiperSlide.className = "swiper-slide size-auto";
 
-  const cardDiv = document.createElement("div");
-  cardDiv.className =
-    "w-full bg-white border border-slate-100  p-2 flex flex-col items-stretch gap-2 shadow-sm hover:shadow-md transition-all cursor-pointer";
-  const imgContainer = document.createElement("div");
-  imgContainer.className =
-    "w-full h-40 flex justify-center items-center relative";
+  const productId = document.createElement("h2");
+  productId.textContent = product.id;
+  productId.className = "hidden";
+
+  const a = document.createElement("a");
+  a.className =
+    "min-w-[130px] overflow-hidden flex flex-col justify-between bg-white p-2 lg:p-0 styles-module-scss-module__kEiM9a__card styles-module-scss-module__kEiM9a__firstCard";
+  a.href = "/product/dkp-16622211/";
+  a.target = "_self";
+
+  const div_1 = document.createElement("div");
+  div_1.className = "rounded-md overflow-hidden";
+
+  const div_1_child = document.createElement("div");
+  div_1_child.style.width = "164px";
+  div_1_child.style.height = "164px";
+  div_1_child.style.lineHeight = "0";
+  div_1_child.setAttribute("role", "img");
+  div_1_child.setAttribute("aria-hidden", "false");
+  div_1_child.setAttribute(
+    "aria-label",
+    "کپسول لیور ویت یوروویتال بسته 60 عددی",
+  );
+
+  const picture = document.createElement("picture");
+
+  const sourceWebp = document.createElement("source");
+  sourceWebp.type = "image/webp";
+  sourceWebp.srcset =
+    "https://dkstatics-public.digikala.com/digikala-products/217b40ae3bef3b862dc4fc12d8b89988e9466db4_1725541507.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80/format,webp";
+
+  const sourceJpeg = document.createElement("source");
+  sourceJpeg.type = "image/jpeg";
+  sourceJpeg.srcset =
+    "https://dkstatics-public.digikala.com/digikala-products/217b40ae3bef3b862dc4fc12d8b89988e9466db4_1725541507.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80";
 
   const img = document.createElement("img");
-  img.src = product.image || "./public/image/product.jpg";
-  img.alt = product.title || "تصویر محصول";
-  img.className = "w-full h-full object-contain";
+  img.className = "w-full rounded-md inline-block";
+  img.width = 164;
+  img.height = 164;
+  img.alt = "کپسول لیور ویت یوروویتال بسته 60 عددی";
+  img.src = sourceJpeg.srcset;
+  img.style.objectFit = "contain";
 
-  imgContainer.appendChild(img);
+  picture.appendChild(sourceWebp);
+  picture.appendChild(sourceJpeg);
+  picture.appendChild(img);
 
-  const titleH3 = document.createElement("h3");
-  titleH3.className =
-    "text-xs font-medium text-slate-800 line-clamp-2 leading-relaxed min-h-[4rem]";
-  titleH3.textContent = product.title;
+  div_1_child.appendChild(picture);
+  div_1.appendChild(div_1_child);
 
-  const priceSection = document.createElement("div");
-  priceSection.className = "flex flex-col gap-1 mt-auto bg-amber-300";
+  const details = document.createElement("div");
+  details.className =
+    "flex flex-col items-start justify-between w-full h-full gap-2 mt-2 lg:items-end lg:p-2 lg:pt-0 ";
+
+  const name = document.createElement("p");
+  name.className =
+    "text-body1-strong-180 lg:text-body-1-180 text-neutral-650 h-10 lg:h-[50px] w-full ellipsis-2 line-clamp-2";
+  name.textContent = "کپسول لیور ویت یوروویتال بسته 60 عددی";
+
+  const priceContainer = document.createElement("div");
+
+  const priceBox = document.createElement("div");
+  priceBox.className =
+    "flex items-center justify-start flex-col h-10.5 pt-0.5 !justify-start !items-start bg-blue-600";
 
   const discountRow = document.createElement("div");
-  discountRow.className =
-    "flex items-center justify-end bg-blue-600 gap-4 bg-amber-900";
+  discountRow.className = "flex justify-start items-center gap-1 bg-teal-700";
 
-  const discountBadge = document.createElement("span");
-  discountBadge.className =
-    "bg-[#ef394e] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full";
-  discountBadge.textContent = `${product.discount}`;
+  const discount = document.createElement("div");
+  discount.className =
+    "px-1 text-white bg-red-600 rounded-large flex items-center justify-center bg-hint-object-error shrink-0 !h-4";
 
-  const oldPriceSpan = document.createElement("span");
-  oldPriceSpan.className = "text-slate-400 text-xs line-through font-normal";
-  oldPriceSpan.textContent = product.preprice;
+  const discountText = document.createElement("span");
+  discountText.className = "text-body2-strong ";
+  discountText.textContent = "۸۰٪";
 
-  discountRow.appendChild(discountBadge);
-  discountRow.appendChild(oldPriceSpan);
+  const oldPrice = document.createElement("span");
+  oldPrice.className =
+    "line-through text-body-2 ml-1 text-neutral-300 !leading-[16px]";
+  oldPrice.textContent = "۱,۶۵۰,۰۰۰";
 
-  const finalPriceRow = document.createElement("div");
-  finalPriceRow.className =
-    "flex items-center justify-end bg-red-600 gap-1 text-slate-900";
+  const currentPriceRow = document.createElement("div");
+  currentPriceRow.className = "flex items-center justify-between";
 
-  const priceSpan = document.createElement("span");
-  priceSpan.className = "text-xl";
-  priceSpan.textContent = +oldPriceSpan - +discountBadge;
+  const currentPriceWrapper = document.createElement("div");
+  currentPriceWrapper.className = "flex items-center";
 
-  const currencySpan = document.createElement("span");
-  currencySpan.className = "text-lg font-bold text-slate-600";
-  currencySpan.textContent = "تومان";
+  const currentPrice = document.createElement("span");
+  currentPrice.className =
+    "text-neutral-800 ml-0.5 text-h4 !leading-[24px] bg-green-600";
+  currentPrice.textContent = "۳۳۰,۰۰۰";
 
-  const btnContainers = document.createElement("div");
-  btnContainers.className = "w-full h-fit bg-red-600 p-1 flex gap-3";
+  const buttonContainer = document.createElement("div");
+  buttonContainer.className = "w-full h-fit p-2 bg-green-600 flex gap-2";
 
   const editBtn = document.createElement("button");
   editBtn.className =
-    "p-2 bg-green-600 cursor-pointer rounded-xl hover:bg-green-400 transition-all";
+    "px-3 py-2 bg-blue-600 rounded-xl  hover:bg-blue-400 transition-all cursor-pointer ";
   editBtn.textContent = "ویرایش";
 
   const deleteBtn = document.createElement("button");
   deleteBtn.className =
-    "p-2 bg-pink-600 cursor-pointer rounded-xl hover:bg-pink-400 transition-all";
+    "px-3 py-2 bg-red-600 rounded-xl  hover:bg-red-400 transition-all cursor-pointer ";
   deleteBtn.textContent = "حذف";
 
-  editBtn.addEventListener("click", () => startEdit(product));
-  deleteBtn.addEventListener("click", () => startDelete());
+  //////////////////////// write this fucntion (use the function that you have written , ) /////////////////
+  editBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    startEdit(product);
+  });
+  discount.appendChild(discountText);
+  discountRow.appendChild(discount);
+  discountRow.appendChild(oldPrice);
 
-  finalPriceRow.appendChild(priceSpan);
-  finalPriceRow.appendChild(currencySpan);
+  currentPriceWrapper.appendChild(currentPrice);
+  currentPriceRow.appendChild(currentPriceWrapper);
 
-  priceSection.appendChild(discountRow);
-  priceSection.appendChild(finalPriceRow);
+  priceBox.appendChild(discountRow);
+  priceBox.appendChild(currentPriceRow);
+  priceContainer.appendChild(priceBox);
 
-  btnContainers.appendChild(editBtn);
-  btnContainers.appendChild(deleteBtn);
+  details.appendChild(name);
+  details.appendChild(priceContainer);
 
-  cardDiv.appendChild(imgContainer);
-  cardDiv.appendChild(titleH3);
-  cardDiv.appendChild(priceSection);
-  cardDiv.appendChild(btnContainers);
+  buttonContainer.appendChild(editBtn);
+  buttonContainer.appendChild(deleteBtn);
 
-  swiperSlide.appendChild(cardDiv);
+  swiperSlide.appendChild(productId);
+  a.appendChild(div_1);
+  a.appendChild(details);
+  a.appendChild(buttonContainer);
+  swiperSlide.appendChild(a);
 
   return swiperSlide;
 }
-//////////////////////// start edit function /////////////////////////////
-function startEdit(product) {
-  const makeSure = document.querySelector(".popout");
-  if (makeSure) return;
 
+//////////////////////////// startedit function //////////////////////////
+function startEdit(product) {
+  if (document.body.querySelector(".popout")) return;
   const popOut = document.createElement("form");
   popOut.className =
-    "w-120 h-fit bg-red-600 flex flex-col justify-center gap-y-5 p-8 fixed top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2 z-50 popout";
-  document.body.appendChild(popOut);
+    "size-120 bg-red-600 flex flex-col items-center gap-x-3 gap-y-8 p-5 fixed z-50 top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 popout";
 
-  const imageLabel = document.createElement("label"),
-    imageUrl = document.createElement("input"),
-    titleLabel = document.createElement("label"),
-    titleInput = document.createElement("input"),
-    discountLabel = document.createElement("label"),
-    discountInput = document.createElement("input"),
-    prePriceLabel = document.createElement("label"),
-    prePrice = document.createElement("input"),
-    mainPriceLabel = document.createElement("label"),
-    mainPriceInput = document.createElement("input"),
-    submitBtn = document.createElement("button");
+  const cardHeading = document.createElement("h2");
+  cardHeading.textContent = `ایدی کارت : ${product.id}`;
+  cardHeading.className = "text-4xl font-extrabold";
 
-  imageLabel.textContent = "آدرس تصویر : ";
-  titleLabel.textContent = "عنوان : ";
-  discountLabel.textContent = "مقدار تخفیف : ";
-  prePriceLabel.textContent = "قیمت قبلی : ";
-  mainPriceLabel.textContent = " محاسبه ی قیمت محصول :   ";
+  const imageInput = document.createElement("input");
+  imageInput.type = "url";
+  imageInput.required = true;
+  imageInput.className = "w-full border p-2 rounded-lg ";
+  imageInput.placeholder = "آدرس عکس را وارد کنید : ";
 
-  imageLabel.htmlFor = "imageUrl";
-  titleLabel.htmlFor = "titleInput";
-  discountLabel.htmlFor = "discountInput";
-  prePriceLabel.htmlFor = "prePrice";
-  mainPriceLabel.htmlFor = "mainPriceInput";
+  const infoInput = document.createElement("input");
+  infoInput.type = "url";
+  infoInput.required = true;
+  infoInput.className = "w-full border p-2 rounded-lg ";
+  infoInput.placeholder = "عنوان کارت را وارد کنید : ";
 
-  imageUrl.type = "url";
-  titleInput.type = "text";
-  discountInput.type = "text";
-  prePrice.type = "text";
-  mainPriceInput.type = "text";
-  submitBtn.type = "submit";
+  const discountInfo = document.createElement("input");
+  discountInfo.type = "url";
+  discountInfo.required = true;
+  discountInfo.className = "w-full border p-2 rounded-lg ";
+  discountInfo.placeholder = "میزان تخفیف را وارد کنید : ";
 
-  imageUrl.id = "imageUrl";
-  titleInput.id = "titleInput";
-  discountInput.id = "discountInput";
-  prePrice.id = "prePrice";
-  mainPriceInput.id = "mainPriceInput";
+  const prePriceInput = document.createElement("input");
+  prePriceInput.type = "url";
+  prePriceInput.required = true;
+  prePriceInput.className = "w-full border p-2 rounded-lg ";
+  prePriceInput.placeholder = "قیمت قبلی را وارد کنید : ";
 
-  imageUrl.className = "w-full border p-2 rounded-xl bg-white";
-  titleInput.className = "w-full border p-2 rounded-xl bg-white";
-  discountInput.className = "w-full border p-2 rounded-xl bg-white";
-  prePrice.className = "w-full border p-2 rounded-xl bg-white";
-  mainPriceInput.className = "w-full border p-2 rounded-xl bg-slate-100";
+  const submitBtn = document.createElement("button");
+  submitBtn.className = "px-4 py-2 bg-green-700 ";
+  submitBtn.textContent = "submit ";
 
-  submitBtn.className =
-    "bg-green-200 px-4 py-2 rounded-xl cursor-pointer hover:bg-green-100 transition-all ";
-
-  imageUrl.value = product.image || "";
-  titleInput.value = product.title || "";
-  discountInput.value = product.discount || "";
-  prePrice.value = product.preprice || "";
-
-  function updateFinalPrice() {
-    const rawPrePrice = Number(String(prePrice.value || 0).replace(/,/g, ""));
-    const rawDiscount = Number(String(discountInput.value || 0).replace(/[%٪]/g, "").replace(/,/g, ""));
-    
-    const discountAmount = (rawPrePrice * rawDiscount) / 100;
-    const calculatedPrice = rawPrePrice - discountAmount;
-    
-    mainPriceInput.value = isNaN(calculatedPrice) ? 0 : Math.round(calculatedPrice);
-  }
-
-  updateFinalPrice();
-
-  prePrice.addEventListener("input", updateFinalPrice);
-  discountInput.addEventListener("input", updateFinalPrice);
-
-  submitBtn.textContent = "تایید";
-  
-  popOut.appendChild(imageLabel);
-  popOut.appendChild(imageUrl);
-  popOut.appendChild(titleLabel);
-  popOut.appendChild(titleInput);
-  popOut.appendChild(discountLabel);
-  popOut.appendChild(discountInput);
-  popOut.appendChild(prePriceLabel);
-  popOut.appendChild(prePrice);
-  popOut.appendChild(mainPriceLabel);
-  popOut.appendChild(mainPriceInput);
+  popOut.appendChild(cardHeading);
+  popOut.appendChild(imageInput);
+  popOut.appendChild(infoInput);
+  popOut.appendChild(discountInfo);
+  popOut.appendChild(prePriceInput);
   popOut.appendChild(submitBtn);
+
+  document.body.appendChild(popOut);
 }
 
 renderCards();

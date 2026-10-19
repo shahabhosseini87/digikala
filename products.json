@@ -2,87 +2,99 @@
   "products": [
     {
       "id": "1",
-      "image": "/public/image/swiper-3/64bef867221.webp",
-      "title": "ساند بار سونی مدل HT-S20R",
-      "discount": "۲۸٪",
-      "preprice": "۶۹,۰۵۹,۲۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+      "discription": "هدفون بی‌سیم با صدای شفاف و طراحی راحت",
+      "discount": 25,
+      "preprice": 2400000,
+      "price": 1800000
     },
     {
       "id": "2",
-      "image": "/public/image/swiper-3/64bef867221.webp",
-      "title": "هدفون بی‌سیم سونی مدل WH-1000XM5",
-      "discount": "۱۵٪",
-      "preprice": "۱۸,۵۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
+      "discription": "ساعت مچی با طراحی مینیمال",
+      "discount": 15,
+      "preprice": 1800000,
+      "price": 1530000
     },
     {
       "id": "3",
-      "image": "/public/image/swiper-3/64bef867221.webp",
-      "title": "مانیتور گیمینگ ایسوس مدل TUF Gaming",
-      "discount": "۲۰٪",
-      "preprice": "۲۵,۰۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
+      "discription": "کفش اسپرت سبک مناسب استفاده روزانه",
+      "discount": 30,
+      "preprice": 3200000,
+      "price": 2240000
     },
     {
       "id": "4",
-      "image": "/public/image/swiper-3/64bef867221.webp",
-      "title": "کنسول بازی پلی‌استیشن ۵ اسلیم",
-      "discount": "۱۰٪",
-      "preprice": "۳۲,۰۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80",
+      "discription": "گوشی هوشمند با نمایشگر باکیفیت",
+      "discount": 10,
+      "preprice": 12500000,
+      "price": 11250000
     },
     {
       "id": "5",
-      "image": "/public/image/swiper-3/64bef867221.webp",
-      "title": "کیبورد مکانیکال گیمینگ لاجیتک",
-      "discount": "۲۵٪",
-      "preprice": "۶,۵۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
+      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
+      "discount": 20,
+      "preprice": 2100000,
+      "price": 1680000
     },
     {
       "id": "6",
-      "image": "/public/image/swiper-3/64bef867221.webp",
-      "title": "ماوس گیمینگ ریزر مدل DeathAdder",
-      "discount": "۱۸٪",
-      "preprice": "۴,۲۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
+      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
+      "discount": 20,
+      "preprice": 2100000,
+      "price": 1680000
     },
     {
       "id": "7",
-      "image" : "/public/image/swiper-3/64bef867221.webp",
-      "title": "میکروفون استودیویی هایپرایس",
-      "discount": "۱۲٪",
-      "preprice": "۸,۹۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
+      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
+      "discount": 20,
+      "preprice": 2100000,
+      "price": 1680000
     },
     {
       "id": "8",
-      "image" : "/public/image/swiper-3/64bef867221.webp",
-      "title": "لپ‌تاپ ۱۵ اینچی ایسوس مدل ROG",
-      "discount": "۸٪",
-      "preprice": "۸۵,۰۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
+      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
+      "discount": 20,
+      "preprice": 2100000,
+      "price": 1680000
     },
     {
       "id": "9",
-      "image" : "/public/image/swiper-3/64bef867221.webp",
-      "title": "اسپیکر بلوتوثی جی‌بی‌ال مدل Charge 5",
-      "discount": "۲۲٪",
-      "preprice": "۹,۲۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
+      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
+      "discount": 20,
+      "preprice": 2100000,
+      "price": 1680000
     },
     {
       "id": "10",
-      "image" : "/public/image/swiper-3/64bef867221.webp",
-      "title": "ساعت هوشمند اپل واچ سری ۹",
-      "discount": "۱۴٪",
-      "preprice": "۲۸,۰۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
+      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
+      "discount": 20,
+      "preprice": 2100000,
+      "price": 1680000
     },
     {
       "id": "11",
-      "image" : "/public/image/swiper-3/64bef867221.webp",
-      "title": "تبلت اپل مدل آیپد پرو",
-      "discount": "۵٪",
-      "preprice": "۶۲,۰۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
+      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
+      "discount": 20,
+      "preprice": 2100000,
+      "price": 1680000
     },
     {
       "id": "12",
-      "image" : "/public/image/swiper-3/64bef867221.webp",
-      "title": "هارد اکسترنال وسترن دیجیتال ۴ ترابایت",
-      "discount": "۳۰٪",
-      "preprice": "۷,۸۰۰,۰۰۰ تومان"
+      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
+      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
+      "discount": 20,
+      "preprice": 2100000,
+      "price": 1680000
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
