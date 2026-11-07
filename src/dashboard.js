@@ -41,6 +41,11 @@ const searchInput = document.getElementById("searchInput");
 const sortBtn = document.getElementById("sortBtn");
 const openModalBtn = document.getElementById("openModalBtn");
 
+const tableEl = tableBody.closest("table");
+tableEl.classList.add("block", "w-full", "lg:table");
+tableEl.tHead?.classList.add("hidden", "lg:table-header-group");
+tableBody.classList.add("grid", "grid-cols-1", "md:grid-cols-2", "gap-4", "lg:table-row-group");
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -62,10 +67,11 @@ function createRow(product, isSaved = false) {
   const tr = document.createElement("tr");
   tr.dataset.id = product.id;
   tr.className = isSaved
-    ? "bg-red-400 hover:bg-red-300 transition-colors"
-    : "hover:bg-slate-50 transition-colors";
+    ? "block rounded-xl border border-slate-300 overflow-hidden lg:table-row lg:rounded-none lg:overflow-visible bg-red-400 hover:bg-red-300 transition-colors"
+    : "block rounded-xl border border-slate-300 overflow-hidden lg:table-row lg:rounded-none lg:overflow-visible hover:bg-slate-50 transition-colors";
 
-  const cellClass = "p-3 border border-slate-300 align-middle";
+  const cellClass =
+    "p-3 border-b border-slate-300 align-middle flex items-center justify-between gap-3 before:content-[attr(data-label)] before:text-xs before:font-semibold before:text-slate-500 lg:table-cell lg:border lg:before:hidden";
 
   tr.innerHTML = `
     <td class="${cellClass}" data-label="شناسه محصول">${escapeHtml(product.code ?? product.id)}</td>
@@ -91,7 +97,7 @@ function createRow(product, isSaved = false) {
     </td>
 
     <td class="${cellClass} text-center" data-label="عملیات">
-      <div class="flex items-center justify-center gap-2 lg:flex-col">
+      <div class="flex flex-wrap items-center justify-center gap-2 lg:flex-col">
 
         <button data-action="edit" data-id="${escapeHtml(product.id)}" class="px-3 py-1 text-xs bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
           ویرایش
@@ -132,7 +138,7 @@ function renderTable() {
   tableBody.innerHTML = "";
 
   if (list.length === 0) {
-    tableBody.innerHTML = `<tr><td colspan="8" class="p-6 text-center text-slate-500 border border-slate-300">محصولی وجود ندارد</td></tr>`;
+    tableBody.innerHTML = `<tr class="block md:col-span-2 lg:table-row"><td colspan="8" class="p-6 text-center text-slate-500 border border-slate-300">محصولی وجود ندارد</td></tr>`;
     return;
   }
 
@@ -163,12 +169,12 @@ modal.className =
   "hidden fixed inset-0 z-50 bg-black/50 items-center justify-center p-4";
 
 modal.innerHTML = `
-  <div class="bg-white rounded-2xl shadow-xl w-full max-w-lg p-6 max-h-[90vh] overflow-y-auto">
+  <div class="bg-white rounded-2xl shadow-xl w-full max-w-lg p-4 sm:p-6 max-h-[90vh] overflow-y-auto">
     <h2 id="modalTitle" class="text-lg font-bold mb-4">محصول جدید</h2>
     <form id="productForm" class="space-y-3">
       <textarea name="discription" required rows="3" placeholder="توضیحات محصول" class="w-full border border-slate-300 rounded-xl px-3 py-2 text-sm"></textarea>
       <input name="image" placeholder="آدرس تصویر (URL)" class="w-full border border-slate-300 rounded-xl px-3 py-2 text-sm" />
-      <div class="grid grid-cols-2 gap-3">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <input name="preprice" type="number" min="0" required placeholder="قیمت قبلی" class="border border-slate-300 rounded-xl px-3 py-2 text-sm" />
         <input name="discount" type="number" min="0" max="100" placeholder="تخفیف (٪)" class="border border-slate-300 rounded-xl px-3 py-2 text-sm" />
       </div>
@@ -250,7 +256,6 @@ form.addEventListener("submit", async (e) => {
     closeModal();
     renderProducts();
   } catch (error) {
-    // ۵. مدیریت خطا
     console.error("خطا در ذخیره محصول:", error);
     alert("ذخیره محصول با خطا مواجه شد.");
   }
@@ -262,7 +267,7 @@ async function renderProducts() {
     renderTable();
   } catch (error) {
     console.error("خطا در دریافت محصولات:", error);
-    tableBody.innerHTML = `<tr><td colspan="8" class="p-6 text-center text-red-500 border border-slate-300">خطا در دریافت محصولات</td></tr>`;
+    tableBody.innerHTML = `<tr class="block md:col-span-2 lg:table-row"><td colspan="8" class="p-6 text-center text-red-500 border border-slate-300">خطا در دریافت محصولات</td></tr>`;
   }
 }
 async function deleteProduct(id) {
