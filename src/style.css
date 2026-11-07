@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @import "../node_modules/swiper/swiper-bundle.min.css";
+@import "./font.css";
+
 @theme {
   --background-image-primary-red: linear-gradient(
     225deg,
@@ -12,5 +14,13 @@
     rgb(255, 249, 229)
   );
 
+  --background-image-primary-green: linear-gradient(
+    225deg,
+    rgb(107, 185, 39) 0%,
+    rgb(157, 196, 77) 100%
+  );
+
   --radius-large: 16px;
+
+  --font-digikala : "digikala";
 }

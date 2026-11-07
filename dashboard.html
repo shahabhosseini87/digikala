@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>dashboard</title>
+</head>
+<body>
+
+  <div
+      class="max-w-7xl mt-5 mx-auto bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"
+    >
+      <div
+        class="p-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4"
+      >
+        <div>
+          <h1 class="text-2xl font-bold text-slate-900">پنل مدیریت محصولات </h1>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <div class="relative flex-1 md:w-64">
+            <i
+              class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"
+            ></i>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="جستجوی محصول..."
+              class="w-full pr-9 pl-4 py-2 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
+            />
+          </div>
+
+          <button
+            id="sortBtn"
+            class="flex items-center gap-2 px-4 py-2 border border-slate-200 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 transition-colors"
+          >
+            <i class="fa-solid fa-arrow-down-short-wide text-slate-400"></i>
+            <span>مرتب‌سازی</span>
+          </button>
+
+          <button
+            id="openModalBtn"
+            class="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-sm font-medium transition-colors shadow-sm"
+          >
+            <i class="fa-solid fa-plus"></i>
+            <span>محصول جدید</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table id="products-table" class="w-full text-right border-collapse">
+          <thead>
+            <tr
+              class="border-b border-slate-200 text-xs text-slate-500 font-semibold uppercase bg-slate-50"
+            >
+              <th class="p-3 border border-slate-300">شناسه محصول</th>
+              <th class="p-3 border border-slate-300">تصویر</th>
+              <th class="p-3 border border-slate-300">اطلاعات محصول</th>
+              <th class="p-3 border border-slate-300">تخفیف</th>
+              <th class="p-3 border border-slate-300">قیمت قبلی</th>
+              <th class="p-3 border border-slate-300">قیمت نهایی</th>
+              <th class="p-3 border border-slate-300 text-center">
+                دسته بندی
+              </th>
+              <th class="p-3 border border-slate-300 text-center">عملیات</th>
+            </tr>
+          </thead>
+          
+
+          <tbody id="productTableBody" class="text-sm"></tbody>
+        </table>
+      </div>
+
+      
+    </div>
+<script type="module" src="./src/dashboard.js"></script>
+</body>
+</html>

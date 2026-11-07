@@ -1,101 +1,3244 @@
 {
+  "header": {
+    "logo": {
+      "image": "public/image/header/full-horizontal.svg"
+    },
+    "links": [
+      {
+        "id": 1,
+        "title": "دسته‌بندی کالاها",
+        "dropdown": true,
+        "categories": [
+          {
+            "id": 1,
+            "title": "موبایل",
+            "icon": "smartphone",
+            "url": "https://www.digikala.com/main/mobile-phone/",
+            "viewAll": {
+              "title": "همه محصولات موبایل",
+              "url": "https://www.digikala.com/main/mobile-phone/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب موبایل",
+                  "url": "https://www.digikala.com/mobile/choose/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "گوشی های اپل",
+                  "url": "https://www.digikala.com/brand/apple/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "آیفون ۱۶",
+                      "url": "https://www.digikala.com/brand/apple/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "آیفون ۱۷",
+                      "url": "https://www.digikala.com/brand/apple/2/"
+                    }
+                  ]
+                },
+                {
+                  "id": 3,
+                  "title": "برندهای مختلف گوشی موبایل",
+                  "url": "https://www.digikala.com/mobile/brands/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "گوشی سامسونگ",
+                      "url": "https://www.digikala.com/mobile/brands/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "گوشی شیائومی",
+                      "url": "https://www.digikala.com/mobile/brands/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "گوشی نوکیا",
+                      "url": "https://www.digikala.com/mobile/brands/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "گوشی ریلمی",
+                      "url": "https://www.digikala.com/mobile/brands/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "گوشی سایفر",
+                      "url": "https://www.digikala.com/mobile/brands/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "گوشی آنر",
+                      "url": "https://www.digikala.com/mobile/brands/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "گوشی ناتینگ فون",
+                      "url": "https://www.digikala.com/mobile/brands/7/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "گوشی براساس قیمت",
+                  "url": "https://www.digikala.com/mobile/price/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "گوشی ارزان",
+                      "url": "https://www.digikala.com/mobile/price/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "گوشی موبایل قسطی",
+                      "url": "https://www.digikala.com/mobile/price/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "گوشی تا ۲ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "گوشی تا ۵ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "گوشی تا ۷ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "گوشی تا ۱۰ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "گوشی تا ۱۲ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/7/"
+                    },
+                    {
+                      "id": 8,
+                      "title": "گوشی تا ۱۵ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/8/"
+                    },
+                    {
+                      "id": 9,
+                      "title": "گوشی تا ۲۰ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/9/"
+                    },
+                    {
+                      "id": 10,
+                      "title": "گوشی تا ۲۵ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/10/"
+                    },
+                    {
+                      "id": 11,
+                      "title": "گوشی تا ۳۰ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/11/"
+                    },
+                    {
+                      "id": 12,
+                      "title": "گوشی تا ۴۰ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/12/"
+                    },
+                    {
+                      "id": 13,
+                      "title": "گوشی تا ۵۰ میلیون تومان",
+                      "url": "https://www.digikala.com/mobile/price/13/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "لوازم جانبی موبایل",
+                  "url": "https://www.digikala.com/mobile/accessories/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "شارژر گوشی",
+                      "url": "https://www.digikala.com/mobile/accessories/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "شارژر وایرلس",
+                      "url": "https://www.digikala.com/mobile/accessories/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "شارژر تایپ سی",
+                      "url": "https://www.digikala.com/mobile/accessories/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "کابل شارژ تایپ سی",
+                      "url": "https://www.digikala.com/mobile/accessories/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "قاب گوشی",
+                      "url": "https://www.digikala.com/mobile/accessories/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "گلس گوشی",
+                      "url": "https://www.digikala.com/mobile/accessories/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "شارژر فندکی",
+                      "url": "https://www.digikala.com/mobile/accessories/7/"
+                    },
+                    {
+                      "id": 8,
+                      "title": "هولدر گوشی موبایل",
+                      "url": "https://www.digikala.com/mobile/accessories/8/"
+                    },
+                    {
+                      "id": 9,
+                      "title": "کابل شارژ و دبل",
+                      "url": "https://www.digikala.com/mobile/accessories/9/"
+                    },
+                    {
+                      "id": 10,
+                      "title": "پاوربانک (شارژر همراه)",
+                      "url": "https://www.digikala.com/mobile/accessories/10/"
+                    },
+                    {
+                      "id": 11,
+                      "title": "پاور استیشن",
+                      "url": "https://www.digikala.com/mobile/accessories/11/"
+                    },
+                    {
+                      "id": 12,
+                      "title": "مونوپاد",
+                      "url": "https://www.digikala.com/mobile/accessories/12/"
+                    },
+                    {
+                      "id": 13,
+                      "title": "کاور ایرپاد",
+                      "url": "https://www.digikala.com/mobile/accessories/13/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 6,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/mobile/hot/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "آیفون ۱۸",
+                      "url": "https://www.digikala.com/mobile/hot/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "گوشی S26",
+                      "url": "https://www.digikala.com/mobile/hot/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "آیفون ۱۷",
+                      "url": "https://www.digikala.com/mobile/hot/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "گوشی S25 سامسونگ",
+                      "url": "https://www.digikala.com/mobile/hot/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "ردمی نوت ۱۷",
+                      "url": "https://www.digikala.com/mobile/hot/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "ردمی نوت ۱۵",
+                      "url": "https://www.digikala.com/mobile/hot/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "ردمی نوت ۱۴ پرو",
+                      "url": "https://www.digikala.com/mobile/hot/7/"
+                    },
+                    {
+                      "id": 8,
+                      "title": "ردمی نوت ۱۴ پرو پلاس",
+                      "url": "https://www.digikala.com/mobile/hot/8/"
+                    },
+                    {
+                      "id": 9,
+                      "title": "گوشی سامسونگ سری s",
+                      "url": "https://www.digikala.com/mobile/hot/9/"
+                    },
+                    {
+                      "id": 10,
+                      "title": "گوشی سامسونگ سری a",
+                      "url": "https://www.digikala.com/mobile/hot/10/"
+                    },
+                    {
+                      "id": 11,
+                      "title": "گوشی سامسونگ سری m",
+                      "url": "https://www.digikala.com/mobile/hot/11/"
+                    },
+                    {
+                      "id": 12,
+                      "title": "گلکسی A57",
+                      "url": "https://www.digikala.com/mobile/hot/12/"
+                    },
+                    {
+                      "id": 13,
+                      "title": "پوکو x7 پرو",
+                      "url": "https://www.digikala.com/mobile/hot/13/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": 2,
+            "title": "لپ تاپ",
+            "icon": "laptop",
+            "url": "https://www.digikala.com/main/laptop/",
+            "viewAll": {
+              "title": "همه محصولات لپ تاپ",
+              "url": "https://www.digikala.com/main/laptop/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب لپ تاپ",
+                  "url": "https://www.digikala.com/laptop/s1/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "برندهای مختلف لپ تاپ",
+                  "url": "https://www.digikala.com/laptop/s2/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "لپ تاپ ایسوس",
+                      "url": "https://www.digikala.com/laptop/s2/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "لپ تاپ لنوو",
+                      "url": "https://www.digikala.com/laptop/s2/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "لپ تاپ اچ پی",
+                      "url": "https://www.digikala.com/laptop/s2/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "لپ تاپ دل",
+                      "url": "https://www.digikala.com/laptop/s2/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "لپ تاپ ایسر",
+                      "url": "https://www.digikala.com/laptop/s2/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "لپ تاپ اپل",
+                      "url": "https://www.digikala.com/laptop/s2/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "لپ تاپ ام اس آی",
+                      "url": "https://www.digikala.com/laptop/s2/7/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 3,
+                  "title": "لپ تاپ براساس کاربری",
+                  "url": "https://www.digikala.com/laptop/s3/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "لپ تاپ دانشجویی",
+                      "url": "https://www.digikala.com/laptop/s3/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "لپ تاپ گیمینگ",
+                      "url": "https://www.digikala.com/laptop/s3/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "لپ تاپ مهندسی",
+                      "url": "https://www.digikala.com/laptop/s3/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "لپ تاپ اداری",
+                      "url": "https://www.digikala.com/laptop/s3/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "لپ تاپ طراحی گرافیک",
+                      "url": "https://www.digikala.com/laptop/s3/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "لپ تاپ ارزان",
+                      "url": "https://www.digikala.com/laptop/s3/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "لپ تاپ ۲ در ۱",
+                      "url": "https://www.digikala.com/laptop/s3/7/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "لوازم جانبی لپ تاپ",
+                  "url": "https://www.digikala.com/laptop/s4/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "کیف لپ تاپ",
+                      "url": "https://www.digikala.com/laptop/s4/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "کول پد",
+                      "url": "https://www.digikala.com/laptop/s4/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ماوس",
+                      "url": "https://www.digikala.com/laptop/s4/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "کیبورد",
+                      "url": "https://www.digikala.com/laptop/s4/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "هاب USB",
+                      "url": "https://www.digikala.com/laptop/s4/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "شارژر لپ تاپ",
+                      "url": "https://www.digikala.com/laptop/s4/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "پایه لپ تاپ",
+                      "url": "https://www.digikala.com/laptop/s4/7/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/laptop/s5/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "مک‌بوک ایر M3",
+                      "url": "https://www.digikala.com/laptop/s5/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "ایسوس ویوبوک",
+                      "url": "https://www.digikala.com/laptop/s5/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "لنوو آیدیاپد",
+                      "url": "https://www.digikala.com/laptop/s5/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "اچ پی ویکتوس",
+                      "url": "https://www.digikala.com/laptop/s5/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "ایسوس تاف گیمینگ",
+                      "url": "https://www.digikala.com/laptop/s5/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "ایسر نیترو ۵",
+                      "url": "https://www.digikala.com/laptop/s5/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "ام اس آی کتانا",
+                      "url": "https://www.digikala.com/laptop/s5/7/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": 3,
+            "title": "کالای دیجیتال",
+            "icon": "electronic-devices",
+            "url": "https://www.digikala.com/main/electronic-devices/",
+            "viewAll": {
+              "title": "همه محصولات کالای دیجیتال",
+              "url": "https://www.digikala.com/main/electronic-devices/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب کالای دیجیتال",
+                  "url": "https://www.digikala.com/electronic-devices/s1/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "برندهای محبوب",
+                  "url": "https://www.digikala.com/electronic-devices/s2/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "سامسونگ",
+                      "url": "https://www.digikala.com/electronic-devices/s2/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "شیائومی",
+                      "url": "https://www.digikala.com/electronic-devices/s2/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ال جی",
+                      "url": "https://www.digikala.com/electronic-devices/s2/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "سونی",
+                      "url": "https://www.digikala.com/electronic-devices/s2/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "انکر",
+                      "url": "https://www.digikala.com/electronic-devices/s2/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "جی بی ال",
+                      "url": "https://www.digikala.com/electronic-devices/s2/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "ریزر",
+                      "url": "https://www.digikala.com/electronic-devices/s2/7/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 3,
+                  "title": "هدفون و اسپیکر",
+                  "url": "https://www.digikala.com/electronic-devices/s3/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "هدفون بلوتوثی",
+                      "url": "https://www.digikala.com/electronic-devices/s3/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "ایرپاد",
+                      "url": "https://www.digikala.com/electronic-devices/s3/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "هدفون گیمینگ",
+                      "url": "https://www.digikala.com/electronic-devices/s3/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "اسپیکر بلوتوثی",
+                      "url": "https://www.digikala.com/electronic-devices/s3/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "ساندبار",
+                      "url": "https://www.digikala.com/electronic-devices/s3/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "میکروفون",
+                      "url": "https://www.digikala.com/electronic-devices/s3/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "هدست",
+                      "url": "https://www.digikala.com/electronic-devices/s3/7/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "ساعت و مچ‌بند هوشمند",
+                  "url": "https://www.digikala.com/electronic-devices/s4/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "ساعت هوشمند اپل",
+                      "url": "https://www.digikala.com/electronic-devices/s4/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "ساعت هوشمند سامسونگ",
+                      "url": "https://www.digikala.com/electronic-devices/s4/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "مچ بند شیائومی",
+                      "url": "https://www.digikala.com/electronic-devices/s4/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "ساعت هوشمند هوآوی",
+                      "url": "https://www.digikala.com/electronic-devices/s4/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "بند ساعت",
+                      "url": "https://www.digikala.com/electronic-devices/s4/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "شارژر ساعت هوشمند",
+                      "url": "https://www.digikala.com/electronic-devices/s4/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/electronic-devices/s5/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "ایرپاد پرو ۳",
+                      "url": "https://www.digikala.com/electronic-devices/s5/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "ساعت اپل سری ۱۰",
+                      "url": "https://www.digikala.com/electronic-devices/s5/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "اسپیکر جی بی ال",
+                      "url": "https://www.digikala.com/electronic-devices/s5/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "هدفون سونی",
+                      "url": "https://www.digikala.com/electronic-devices/s5/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "پلی استیشن ۵",
+                      "url": "https://www.digikala.com/electronic-devices/s5/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "دوربین کانن",
+                      "url": "https://www.digikala.com/electronic-devices/s5/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "تبلت سامسونگ",
+                      "url": "https://www.digikala.com/electronic-devices/s5/7/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": 4,
+            "title": "لوازم خانگی برقی",
+            "icon": "home-appliances",
+            "url": "https://www.digikala.com/main/home-appliances/",
+            "viewAll": {
+              "title": "همه محصولات لوازم خانگی برقی",
+              "url": "https://www.digikala.com/main/home-appliances/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب لوازم خانگی",
+                  "url": "https://www.digikala.com/home-appliances/s1/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "برندهای مختلف",
+                  "url": "https://www.digikala.com/home-appliances/s2/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "سامسونگ",
+                      "url": "https://www.digikala.com/home-appliances/s2/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "ال جی",
+                      "url": "https://www.digikala.com/home-appliances/s2/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "بوش",
+                      "url": "https://www.digikala.com/home-appliances/s2/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "اسنوا",
+                      "url": "https://www.digikala.com/home-appliances/s2/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "پاکشوما",
+                      "url": "https://www.digikala.com/home-appliances/s2/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "دوو",
+                      "url": "https://www.digikala.com/home-appliances/s2/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "هایسنس",
+                      "url": "https://www.digikala.com/home-appliances/s2/7/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 3,
+                  "title": "یخچال و فریزر",
+                  "url": "https://www.digikala.com/home-appliances/s3/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "یخچال ساید بای ساید",
+                      "url": "https://www.digikala.com/home-appliances/s3/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "یخچال فریزر بالا",
+                      "url": "https://www.digikala.com/home-appliances/s3/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "یخچال فریزر پایین",
+                      "url": "https://www.digikala.com/home-appliances/s3/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "یخچال دوقلو",
+                      "url": "https://www.digikala.com/home-appliances/s3/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "فریزر صندوقی",
+                      "url": "https://www.digikala.com/home-appliances/s3/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "فریزر ایستاده",
+                      "url": "https://www.digikala.com/home-appliances/s3/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "ماشین لباسشویی و ظرفشویی",
+                  "url": "https://www.digikala.com/home-appliances/s4/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "لباسشویی ۸ کیلویی",
+                      "url": "https://www.digikala.com/home-appliances/s4/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "لباسشویی ۹ کیلویی",
+                      "url": "https://www.digikala.com/home-appliances/s4/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "لباسشویی درب از بالا",
+                      "url": "https://www.digikala.com/home-appliances/s4/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "ظرفشویی ۱۴ نفره",
+                      "url": "https://www.digikala.com/home-appliances/s4/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "ظرفشویی رومیزی",
+                      "url": "https://www.digikala.com/home-appliances/s4/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "خشک‌کن لباس",
+                      "url": "https://www.digikala.com/home-appliances/s4/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/home-appliances/s5/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "جاروبرقی رباتیک",
+                      "url": "https://www.digikala.com/home-appliances/s5/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "اجاق گاز صفحه‌ای",
+                      "url": "https://www.digikala.com/home-appliances/s5/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ماکروویو",
+                      "url": "https://www.digikala.com/home-appliances/s5/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "سرخ‌کن بدون روغن",
+                      "url": "https://www.digikala.com/home-appliances/s5/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "کولر گازی",
+                      "url": "https://www.digikala.com/home-appliances/s5/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "پکیج",
+                      "url": "https://www.digikala.com/home-appliances/s5/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "پنکه",
+                      "url": "https://www.digikala.com/home-appliances/s5/7/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": 5,
+            "title": "محصولات بومی و محلی",
+            "icon": "native-products",
+            "url": "https://www.digikala.com/main/native-products/",
+            "viewAll": {
+              "title": "همه محصولات محصولات بومی و محلی",
+              "url": "https://www.digikala.com/main/native-products/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب محصولات بومی",
+                  "url": "https://www.digikala.com/native-products/s1/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "خوراکی‌های محلی",
+                  "url": "https://www.digikala.com/native-products/s2/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "عسل طبیعی",
+                      "url": "https://www.digikala.com/native-products/s2/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "زعفران",
+                      "url": "https://www.digikala.com/native-products/s2/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "برنج ایرانی",
+                      "url": "https://www.digikala.com/native-products/s2/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "روغن حیوانی",
+                      "url": "https://www.digikala.com/native-products/s2/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "ارده و کنجد",
+                      "url": "https://www.digikala.com/native-products/s2/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "لواشک و آلوچه",
+                      "url": "https://www.digikala.com/native-products/s2/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 3,
+                  "title": "شیرینی و آجیل",
+                  "url": "https://www.digikala.com/native-products/s3/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "حلوا شکری",
+                      "url": "https://www.digikala.com/native-products/s3/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "گز و سوهان",
+                      "url": "https://www.digikala.com/native-products/s3/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "خرما",
+                      "url": "https://www.digikala.com/native-products/s3/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "پسته",
+                      "url": "https://www.digikala.com/native-products/s3/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "بادام",
+                      "url": "https://www.digikala.com/native-products/s3/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "کشمش و برگه",
+                      "url": "https://www.digikala.com/native-products/s3/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "صنایع دستی",
+                  "url": "https://www.digikala.com/native-products/s4/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "ظروف سنتی",
+                      "url": "https://www.digikala.com/native-products/s4/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "تابلو فرش",
+                      "url": "https://www.digikala.com/native-products/s4/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "سفالگری",
+                      "url": "https://www.digikala.com/native-products/s4/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "ترمه",
+                      "url": "https://www.digikala.com/native-products/s4/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "گلیم",
+                      "url": "https://www.digikala.com/native-products/s4/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "لوستر دست‌ساز",
+                      "url": "https://www.digikala.com/native-products/s4/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/native-products/s5/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "زعفران نگین",
+                      "url": "https://www.digikala.com/native-products/s5/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "عسل چهل گیاه",
+                      "url": "https://www.digikala.com/native-products/s5/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "خرمای مضافتی",
+                      "url": "https://www.digikala.com/native-products/s5/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "سوهان قم",
+                      "url": "https://www.digikala.com/native-products/s5/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "گز اصفهان",
+                      "url": "https://www.digikala.com/native-products/s5/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "رب انار",
+                      "url": "https://www.digikala.com/native-products/s5/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "ارده کنجد",
+                      "url": "https://www.digikala.com/native-products/s5/7/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": 6,
+            "title": "خانه و آشپزخانه",
+            "icon": "home-and-kitchen",
+            "url": "https://www.digikala.com/main/home-and-kitchen/",
+            "viewAll": {
+              "title": "همه محصولات خانه و آشپزخانه",
+              "url": "https://www.digikala.com/main/home-and-kitchen/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب لوازم خانه",
+                  "url": "https://www.digikala.com/home-and-kitchen/s1/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "ظروف آشپزخانه",
+                  "url": "https://www.digikala.com/home-and-kitchen/s2/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "قابلمه و تابه",
+                      "url": "https://www.digikala.com/home-and-kitchen/s2/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "سرویس قاشق و چنگال",
+                      "url": "https://www.digikala.com/home-and-kitchen/s2/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ظروف نگهداری",
+                      "url": "https://www.digikala.com/home-and-kitchen/s2/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "لیوان و فنجان",
+                      "url": "https://www.digikala.com/home-and-kitchen/s2/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "بشقاب و کاسه",
+                      "url": "https://www.digikala.com/home-and-kitchen/s2/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "ست چاقو",
+                      "url": "https://www.digikala.com/home-and-kitchen/s2/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 3,
+                  "title": "دکوراسیون",
+                  "url": "https://www.digikala.com/home-and-kitchen/s3/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "آینه دکوراتیو",
+                      "url": "https://www.digikala.com/home-and-kitchen/s3/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "تابلو",
+                      "url": "https://www.digikala.com/home-and-kitchen/s3/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "گلدان",
+                      "url": "https://www.digikala.com/home-and-kitchen/s3/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "ساعت دیواری",
+                      "url": "https://www.digikala.com/home-and-kitchen/s3/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "شمع و جاشمعی",
+                      "url": "https://www.digikala.com/home-and-kitchen/s3/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "فرش و گلیم",
+                      "url": "https://www.digikala.com/home-and-kitchen/s3/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "مبلمان و خواب",
+                  "url": "https://www.digikala.com/home-and-kitchen/s4/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "مبل راحتی",
+                      "url": "https://www.digikala.com/home-and-kitchen/s4/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "سرویس خواب",
+                      "url": "https://www.digikala.com/home-and-kitchen/s4/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "تشک",
+                      "url": "https://www.digikala.com/home-and-kitchen/s4/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "بالش",
+                      "url": "https://www.digikala.com/home-and-kitchen/s4/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "ملحفه",
+                      "url": "https://www.digikala.com/home-and-kitchen/s4/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "پتو و لحاف",
+                      "url": "https://www.digikala.com/home-and-kitchen/s4/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/home-and-kitchen/s5/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "سرویس قابلمه",
+                      "url": "https://www.digikala.com/home-and-kitchen/s5/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "اتو بخار",
+                      "url": "https://www.digikala.com/home-and-kitchen/s5/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "چرخ گوشت",
+                      "url": "https://www.digikala.com/home-and-kitchen/s5/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "میز ناهارخوری",
+                      "url": "https://www.digikala.com/home-and-kitchen/s5/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "جاکفشی",
+                      "url": "https://www.digikala.com/home-and-kitchen/s5/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "آبمیوه گیری",
+                      "url": "https://www.digikala.com/home-and-kitchen/s5/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "سرویس چینی",
+                      "url": "https://www.digikala.com/home-and-kitchen/s5/7/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": 7,
+            "title": "آرایشی بهداشتی",
+            "icon": "personal-appliance",
+            "url": "https://www.digikala.com/main/personal-appliance/",
+            "viewAll": {
+              "title": "همه محصولات آرایشی بهداشتی",
+              "url": "https://www.digikala.com/main/personal-appliance/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب لوازم آرایشی",
+                  "url": "https://www.digikala.com/personal-appliance/s1/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "آرایش صورت",
+                  "url": "https://www.digikala.com/personal-appliance/s2/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "کرم پودر",
+                      "url": "https://www.digikala.com/personal-appliance/s2/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "رژ لب",
+                      "url": "https://www.digikala.com/personal-appliance/s2/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ریمل",
+                      "url": "https://www.digikala.com/personal-appliance/s2/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "سایه چشم",
+                      "url": "https://www.digikala.com/personal-appliance/s2/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "پنکک",
+                      "url": "https://www.digikala.com/personal-appliance/s2/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "خط چشم",
+                      "url": "https://www.digikala.com/personal-appliance/s2/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 3,
+                  "title": "مراقبت از پوست",
+                  "url": "https://www.digikala.com/personal-appliance/s3/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "کرم مرطوب کننده",
+                      "url": "https://www.digikala.com/personal-appliance/s3/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "ضد آفتاب",
+                      "url": "https://www.digikala.com/personal-appliance/s3/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "سرم صورت",
+                      "url": "https://www.digikala.com/personal-appliance/s3/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "ماسک صورت",
+                      "url": "https://www.digikala.com/personal-appliance/s3/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "شوینده صورت",
+                      "url": "https://www.digikala.com/personal-appliance/s3/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "کرم ضد چروک",
+                      "url": "https://www.digikala.com/personal-appliance/s3/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "مراقبت از مو",
+                  "url": "https://www.digikala.com/personal-appliance/s4/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "شامپو",
+                      "url": "https://www.digikala.com/personal-appliance/s4/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "نرم کننده",
+                      "url": "https://www.digikala.com/personal-appliance/s4/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ماسک مو",
+                      "url": "https://www.digikala.com/personal-appliance/s4/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "روغن مو",
+                      "url": "https://www.digikala.com/personal-appliance/s4/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "رنگ مو",
+                      "url": "https://www.digikala.com/personal-appliance/s4/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "اسپری مو",
+                      "url": "https://www.digikala.com/personal-appliance/s4/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/personal-appliance/s5/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "عطر زنانه",
+                      "url": "https://www.digikala.com/personal-appliance/s5/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "عطر مردانه",
+                      "url": "https://www.digikala.com/personal-appliance/s5/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ادکلن",
+                      "url": "https://www.digikala.com/personal-appliance/s5/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "ست آرایشی",
+                      "url": "https://www.digikala.com/personal-appliance/s5/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "کرم دست",
+                      "url": "https://www.digikala.com/personal-appliance/s5/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "لاک ناخن",
+                      "url": "https://www.digikala.com/personal-appliance/s5/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "ریش تراش",
+                      "url": "https://www.digikala.com/personal-appliance/s5/7/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": 8,
+            "title": "مد و پوشاک",
+            "icon": "apparel",
+            "url": "https://www.digikala.com/main/apparel/",
+            "viewAll": {
+              "title": "همه محصولات مد و پوشاک",
+              "url": "https://www.digikala.com/main/apparel/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب پوشاک",
+                  "url": "https://www.digikala.com/apparel/s1/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "پوشاک مردانه",
+                  "url": "https://www.digikala.com/apparel/s2/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "پیراهن مردانه",
+                      "url": "https://www.digikala.com/apparel/s2/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "شلوار جین",
+                      "url": "https://www.digikala.com/apparel/s2/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "هودی",
+                      "url": "https://www.digikala.com/apparel/s2/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "کاپشن",
+                      "url": "https://www.digikala.com/apparel/s2/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "کت و شلوار",
+                      "url": "https://www.digikala.com/apparel/s2/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "تیشرت",
+                      "url": "https://www.digikala.com/apparel/s2/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 3,
+                  "title": "پوشاک زنانه",
+                  "url": "https://www.digikala.com/apparel/s3/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "مانتو",
+                      "url": "https://www.digikala.com/apparel/s3/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "شال و روسری",
+                      "url": "https://www.digikala.com/apparel/s3/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "لباس مجلسی",
+                      "url": "https://www.digikala.com/apparel/s3/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "بلوز",
+                      "url": "https://www.digikala.com/apparel/s3/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "شلوار زنانه",
+                      "url": "https://www.digikala.com/apparel/s3/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "لباس خواب",
+                      "url": "https://www.digikala.com/apparel/s3/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "کفش و کیف",
+                  "url": "https://www.digikala.com/apparel/s4/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "کفش اسپورت",
+                      "url": "https://www.digikala.com/apparel/s4/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "کفش رسمی",
+                      "url": "https://www.digikala.com/apparel/s4/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "صندل",
+                      "url": "https://www.digikala.com/apparel/s4/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "کیف دوشی",
+                      "url": "https://www.digikala.com/apparel/s4/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "کوله پشتی",
+                      "url": "https://www.digikala.com/apparel/s4/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "کیف پول",
+                      "url": "https://www.digikala.com/apparel/s4/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/apparel/s5/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "کتونی نایکی",
+                      "url": "https://www.digikala.com/apparel/s5/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "کفش آدیداس",
+                      "url": "https://www.digikala.com/apparel/s5/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ساعت مچی",
+                      "url": "https://www.digikala.com/apparel/s5/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "عینک آفتابی",
+                      "url": "https://www.digikala.com/apparel/s5/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "کاپشن پفی",
+                      "url": "https://www.digikala.com/apparel/s5/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "پالتو",
+                      "url": "https://www.digikala.com/apparel/s5/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "کلاه",
+                      "url": "https://www.digikala.com/apparel/s5/7/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": 9,
+            "title": "طلا و نقره",
+            "icon": "jewelry",
+            "url": "https://www.digikala.com/main/jewelry/",
+            "viewAll": {
+              "title": "همه محصولات طلا و نقره",
+              "url": "https://www.digikala.com/main/jewelry/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب طلا و نقره",
+                  "url": "https://www.digikala.com/jewelry/s1/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "جواهرات زنانه",
+                  "url": "https://www.digikala.com/jewelry/s2/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "گردنبند طلا",
+                      "url": "https://www.digikala.com/jewelry/s2/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "انگشتر طلا",
+                      "url": "https://www.digikala.com/jewelry/s2/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "گوشواره طلا",
+                      "url": "https://www.digikala.com/jewelry/s2/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "دستبند طلا",
+                      "url": "https://www.digikala.com/jewelry/s2/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "النگو",
+                      "url": "https://www.digikala.com/jewelry/s2/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "سرویس طلا",
+                      "url": "https://www.digikala.com/jewelry/s2/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 3,
+                  "title": "سکه و شمش",
+                  "url": "https://www.digikala.com/jewelry/s3/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "سکه امامی",
+                      "url": "https://www.digikala.com/jewelry/s3/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "نیم سکه",
+                      "url": "https://www.digikala.com/jewelry/s3/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ربع سکه",
+                      "url": "https://www.digikala.com/jewelry/s3/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "شمش طلا",
+                      "url": "https://www.digikala.com/jewelry/s3/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "سکه گرمی",
+                      "url": "https://www.digikala.com/jewelry/s3/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "سکه بهار آزادی",
+                      "url": "https://www.digikala.com/jewelry/s3/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "نقره و بدلیجات",
+                  "url": "https://www.digikala.com/jewelry/s4/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "انگشتر نقره",
+                      "url": "https://www.digikala.com/jewelry/s4/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "گردنبند نقره",
+                      "url": "https://www.digikala.com/jewelry/s4/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "دستبند نقره",
+                      "url": "https://www.digikala.com/jewelry/s4/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "گوشواره نقره",
+                      "url": "https://www.digikala.com/jewelry/s4/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "زنجیر",
+                      "url": "https://www.digikala.com/jewelry/s4/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "پلاک",
+                      "url": "https://www.digikala.com/jewelry/s4/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/jewelry/s5/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "طلای دیجیتال",
+                      "url": "https://www.digikala.com/jewelry/s5/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "نیم ست طلا",
+                      "url": "https://www.digikala.com/jewelry/s5/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "انگشتر عیار ۱۸",
+                      "url": "https://www.digikala.com/jewelry/s5/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "ساعت طلا",
+                      "url": "https://www.digikala.com/jewelry/s5/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "سکه امامی",
+                      "url": "https://www.digikala.com/jewelry/s5/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "شمش ۱۰ گرمی",
+                      "url": "https://www.digikala.com/jewelry/s5/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "سرویس نقره",
+                      "url": "https://www.digikala.com/jewelry/s5/7/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": 10,
+            "title": "خودرو و موتورسیکلت",
+            "icon": "vehicles",
+            "url": "https://www.digikala.com/main/vehicles/",
+            "viewAll": {
+              "title": "همه محصولات خودرو و موتورسیکلت",
+              "url": "https://www.digikala.com/main/vehicles/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب لوازم خودرو",
+                  "url": "https://www.digikala.com/vehicles/s1/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "لوازم یدکی",
+                  "url": "https://www.digikala.com/vehicles/s2/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "لنت ترمز",
+                      "url": "https://www.digikala.com/vehicles/s2/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "فیلتر روغن",
+                      "url": "https://www.digikala.com/vehicles/s2/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "شمع خودرو",
+                      "url": "https://www.digikala.com/vehicles/s2/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "باتری ماشین",
+                      "url": "https://www.digikala.com/vehicles/s2/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "لاستیک",
+                      "url": "https://www.digikala.com/vehicles/s2/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "روغن موتور",
+                      "url": "https://www.digikala.com/vehicles/s2/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 3,
+                  "title": "لوازم جانبی خودرو",
+                  "url": "https://www.digikala.com/vehicles/s3/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "کاور صندلی",
+                      "url": "https://www.digikala.com/vehicles/s3/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "روکش فرمان",
+                      "url": "https://www.digikala.com/vehicles/s3/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "دوربین دنده",
+                      "url": "https://www.digikala.com/vehicles/s3/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "پایه موبایل ماشین",
+                      "url": "https://www.digikala.com/vehicles/s3/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "شارژر فندکی",
+                      "url": "https://www.digikala.com/vehicles/s3/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "خوشبو کننده",
+                      "url": "https://www.digikala.com/vehicles/s3/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "موتورسیکلت",
+                  "url": "https://www.digikala.com/vehicles/s4/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "کلاه کاسکت",
+                      "url": "https://www.digikala.com/vehicles/s4/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "دستکش موتورسواری",
+                      "url": "https://www.digikala.com/vehicles/s4/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "کاپشن موتورسواری",
+                      "url": "https://www.digikala.com/vehicles/s4/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "قفل موتور",
+                      "url": "https://www.digikala.com/vehicles/s4/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "روغن موتور سیکلت",
+                      "url": "https://www.digikala.com/vehicles/s4/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "لاستیک موتور",
+                      "url": "https://www.digikala.com/vehicles/s4/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/vehicles/s5/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "روغن موتور",
+                      "url": "https://www.digikala.com/vehicles/s5/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "باتری ۶۰ آمپر",
+                      "url": "https://www.digikala.com/vehicles/s5/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "لاستیک ۲۰۵",
+                      "url": "https://www.digikala.com/vehicles/s5/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "دوربین دنده",
+                      "url": "https://www.digikala.com/vehicles/s5/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "ضبط ماشین",
+                      "url": "https://www.digikala.com/vehicles/s5/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "کلاه کاسکت",
+                      "url": "https://www.digikala.com/vehicles/s5/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "پایه موبایل ماشین",
+                      "url": "https://www.digikala.com/vehicles/s5/7/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "id": 11,
+            "title": "سلامت و پزشکی",
+            "icon": "health",
+            "url": "https://www.digikala.com/main/health/",
+            "viewAll": {
+              "title": "همه محصولات سلامت و پزشکی",
+              "url": "https://www.digikala.com/main/health/"
+            },
+            "columns": [
+              [
+                {
+                  "id": 1,
+                  "title": "انتخاب تجهیزات پزشکی",
+                  "url": "https://www.digikala.com/health/s1/",
+                  "items": []
+                },
+                {
+                  "id": 2,
+                  "title": "تجهیزات پزشکی",
+                  "url": "https://www.digikala.com/health/s2/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "فشارسنج",
+                      "url": "https://www.digikala.com/health/s2/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "دماسنج",
+                      "url": "https://www.digikala.com/health/s2/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "قندسنج",
+                      "url": "https://www.digikala.com/health/s2/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "ترازو",
+                      "url": "https://www.digikala.com/health/s2/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "اکسی‌متر",
+                      "url": "https://www.digikala.com/health/s2/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "نبولایزر",
+                      "url": "https://www.digikala.com/health/s2/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 3,
+                  "title": "مکمل‌ها",
+                  "url": "https://www.digikala.com/health/s3/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "ویتامین د",
+                      "url": "https://www.digikala.com/health/s3/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "ویتامین ث",
+                      "url": "https://www.digikala.com/health/s3/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "منیزیم",
+                      "url": "https://www.digikala.com/health/s3/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "زینک",
+                      "url": "https://www.digikala.com/health/s3/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "امگا ۳",
+                      "url": "https://www.digikala.com/health/s3/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "مولتی ویتامین",
+                      "url": "https://www.digikala.com/health/s3/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 4,
+                  "title": "ماساژور و مراقبت",
+                  "url": "https://www.digikala.com/health/s4/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "ماساژور",
+                      "url": "https://www.digikala.com/health/s4/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "کیسه آب گرم",
+                      "url": "https://www.digikala.com/health/s4/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ماساژور گردن",
+                      "url": "https://www.digikala.com/health/s4/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "کمربند طبی",
+                      "url": "https://www.digikala.com/health/s4/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "زانوبند",
+                      "url": "https://www.digikala.com/health/s4/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "کفی طبی",
+                      "url": "https://www.digikala.com/health/s4/6/"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": 5,
+                  "title": "داغ ترین‌ها",
+                  "url": "https://www.digikala.com/health/s5/",
+                  "items": [
+                    {
+                      "id": 1,
+                      "title": "فشارسنج دیجیتال",
+                      "url": "https://www.digikala.com/health/s5/1/"
+                    },
+                    {
+                      "id": 2,
+                      "title": "اکسی‌متر",
+                      "url": "https://www.digikala.com/health/s5/2/"
+                    },
+                    {
+                      "id": 3,
+                      "title": "ویتامین د",
+                      "url": "https://www.digikala.com/health/s5/3/"
+                    },
+                    {
+                      "id": 4,
+                      "title": "نبولایزر",
+                      "url": "https://www.digikala.com/health/s5/4/"
+                    },
+                    {
+                      "id": 5,
+                      "title": "ماساژور تفنگی",
+                      "url": "https://www.digikala.com/health/s5/5/"
+                    },
+                    {
+                      "id": 6,
+                      "title": "دماسنج لیزری",
+                      "url": "https://www.digikala.com/health/s5/6/"
+                    },
+                    {
+                      "id": 7,
+                      "title": "ترازو دیجیتال",
+                      "url": "https://www.digikala.com/health/s5/7/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "شگفت‌انگیزها",
+        "url": "https://www.digikala.com/incredible-offers/",
+        "dropdown": false
+      },
+      {
+        "id": 3,
+        "title": "سوپرمارکت",
+        "url": "https://api.digikala.com/super-app/v1/sso/jet/?redirect_url=%2F%3Futm_source%3Ddigikala-superweb%26sa_user%3Dtrue",
+        "dropdown": false
+      },
+      {
+        "id": 4,
+        "title": "طلا و نقره دیجیتال",
+        "url": "https://www.digikala.com/wealth/landing/digital-gold/",
+        "dropdown": false
+      },
+      {
+        "id": 5,
+        "title": "پرفروش‌ترین‌ها",
+        "url": "https://www.digikala.com/best-selling/",
+        "dropdown": false
+      },
+      {
+        "id": 6,
+        "title": "دیجی‌استایل",
+        "url": "https://digistyle.com/",
+        "dropdown": false
+      },
+      {
+        "id": 7,
+        "title": "در دیجی‌کالا بفروشید!",
+        "url": "https://www.digikala.com/landings/seller-introduction/",
+        "dropdown": false
+      }
+    ]
+  },
+  "footer": {
+    "logo": {
+      "image": "https://www.digikala.com/brand/full-horizontal.svg",
+      "alt": "digikala - دیجی کالا"
+    },
+    "support": {
+      "phone1": "تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱",
+      "phone2": "۰۲۱-۹۱۰۰۰۱۰۰",
+      "text": "۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم"
+    },
+    "features": [
+      {
+        "id": 1,
+        "title": "امکان تحویل اکسپرس",
+        "icon": "https://www.digikala.com/statics/img/svg/footer/express-delivery.svg",
+        "url": "https://www.digikala.com/faq/question/79/"
+      },
+      {
+        "id": 2,
+        "title": "امکان پرداخت در محل",
+        "icon": "https://www.digikala.com/statics/img/svg/footer/cash-on-delivery.svg",
+        "url": "https://www.digikala.com/faq/question/81/"
+      },
+      {
+        "id": 3,
+        "title": "۷ روز هفته، ۲۴ ساعته",
+        "icon": "https://www.digikala.com/statics/img/svg/footer/support.svg",
+        "url": "https://www.digikala.com/page/contact-us/"
+      },
+      {
+        "id": 4,
+        "title": "هفت روز ضمانت بازگشت کالا",
+        "icon": "https://www.digikala.com/statics/img/svg/footer/days-return.svg",
+        "url": "https://www.digikala.com/faq/question/83/"
+      },
+      {
+        "id": 5,
+        "title": "ضمانت اصل بودن کالا",
+        "icon": "https://www.digikala.com/statics/img/svg/footer/original-products.svg",
+        "url": "https://www.digikala.com/faq/question/82/"
+      }
+    ],
+    "columns": [
+      {
+        "id": 1,
+        "title": "با دیجی‌کالا",
+        "links": [
+          {
+            "id": 1,
+            "title": "اتاق خبر دیجی‌کالا",
+            "url": "https://about.digikala.com/newsroom/"
+          },
+          {
+            "id": 2,
+            "title": "فروش در دیجی‌کالا",
+            "url": "https://www.digikala.com/landings/seller-introduction/"
+          },
+          {
+            "id": 3,
+            "title": "فرصت‌های شغلی",
+            "url": "https://careers.digikala.com/"
+          },
+          {
+            "id": 4,
+            "title": "گزارش تخلف در دیجی‌کالا",
+            "url": "https://digikalagroup-rac.com/portal/go/External-cases"
+          },
+          {
+            "id": 5,
+            "title": "تماس با دیجی‌کالا",
+            "url": "https://www.digikala.com/page/contact-us/"
+          },
+          {
+            "id": 6,
+            "title": "درباره دیجی‌کالا",
+            "url": "https://about.digikala.com/"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "خدمات مشتریان",
+        "links": [
+          {
+            "id": 1,
+            "title": "پاسخ به پرسش‌های متداول",
+            "url": "https://www.digikala.com/faq/"
+          },
+          {
+            "id": 2,
+            "title": "رویه‌های بازگرداندن کالا",
+            "url": "https://www.digikala.com/faq/question/83/"
+          },
+          {
+            "id": 3,
+            "title": "شرایط استفاده",
+            "url": "https://www.digikala.com/page/terms/"
+          },
+          {
+            "id": 4,
+            "title": "حریم خصوصی",
+            "url": "https://www.digikala.com/page/privacy/"
+          },
+          {
+            "id": 5,
+            "title": "گزارش باگ",
+            "url": "https://www.digikala.com/page/bug-report/"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "راهنمای خرید از دیجی‌کالا",
+        "links": [
+          {
+            "id": 1,
+            "title": "نحوه ثبت سفارش",
+            "url": "https://www.digikala.com/faq/question/649/"
+          },
+          {
+            "id": 2,
+            "title": "رویه ارسال سفارش",
+            "url": "https://www.digikala.com/faq/question/79/"
+          },
+          {
+            "id": 3,
+            "title": "شیوه‌های پرداخت",
+            "url": "https://www.digikala.com/faq/question/81/"
+          }
+        ]
+      }
+    ],
+    "social": {
+      "title": "همراه ما باشید!",
+      "items": [
+        {
+          "id": 1,
+          "title": "اینستاگرام",
+          "url": "https://www.instagram.com/digikalacom/"
+        },
+        {
+          "id": 2,
+          "title": "توییتر",
+          "url": "https://twitter.com/digikalacom"
+        },
+        {
+          "id": 3,
+          "title": "لینکدین",
+          "url": "https://www.linkedin.com/company/digikala/mycompany/"
+        },
+        {
+          "id": 4,
+          "title": "آپارات",
+          "url": "https://www.aparat.com/digikala/"
+        },
+        {
+          "id": 5,
+          "title": "بله",
+          "url": "https://ble.ir/digikala"
+        }
+      ]
+    },
+    "newsletter": {
+      "title": "با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید"
+    },
+    "app": {
+      "logo": "https://www.digikala.com/statics/img/png/footerlogo2.png",
+      "title": "دانلود اپلیکیشن دیجی‌کالا",
+      "stores": [
+        {
+          "id": 1,
+          "title": "دریافت از کافه‌بازار",
+          "image": "https://www.digikala.com/statics/img/svg/appStores/coffe-bazzar.svg",
+          "url": "https://click.adtrace.io/d5wyajq"
+        },
+        {
+          "id": 2,
+          "title": "دریافت از مایکت",
+          "image": "https://www.digikala.com/statics/img/svg/appStores/myket.svg",
+          "url": "https://click.adtrace.io/y9sit74"
+        },
+        {
+          "id": 3,
+          "title": "دریافت از سیب‌اپ",
+          "image": "https://www.digikala.com/statics/img/svg/appStores/sib-app.svg",
+          "url": "https://click.adtrace.io/56hqs7k"
+        }
+      ],
+      "moreIcon": "https://www.digikala.com/statics/img/svg/More.svg",
+      "moreText": "اطلاعات بیشتر درباره اپلیکیشن دیجی‌کالا",
+      "moreUrl": "https://www.digikala.com/landings/new-app/"
+    },
+    "seo": [
+      {
+        "type": "h1",
+        "text": "دیجی کالا؛ بزرگترین فروشگاه اینترنتی ایران"
+      },
+      {
+        "type": "p",
+        "text": "دیجی کالا سال‌ها است که به انتخاب اول بسیاری از خریداران اینترنتی تبدیل شده است. دیجی کالا به عنوان بزرگ‌ترین و معتبرترین فروشگاه آنلاین ایران، شناخته‌شده‌ترین فروشگاه نیز محسوب می‌شود. این فروشگاه آنلاین نه‌تنها گسترده‌ترین تنوع کالا را در دسته‌بندی‌های مختلف ارائه می‌دهد، بلکه با خدمات بی‌نظیر، ارسال سریع، ضمانت اصل بودن کالا و پشتیبانی حرفه‌ای، استاندارد جدیدی در خرید اینترنتی ایران تعریف کرده است. این فروشگاه با سال‌ها تجربه و اعتماد مشتریان، کامل‌ترین و بهترین گزینه برای خرید آنلاین در ایران محسوب می‌شود. این روزها بازار دیجی کالا حتی فرصت خرید آسان از فروشگاه های اینستاگرامی را در اختیار شما قرار داده است و اگر هم خرید حضوری را ترجیح می‌دهید فروشگاه حضوری دیجی کالا هر روز بر تعداد شعب خود می‌افزاید."
+      },
+      {
+        "type": "h2",
+        "text": "ویژگی های مهم دیجی کالا"
+      },
+      {
+        "type": "p",
+        "text": "یکی از ویژگی‌های مهم در خرید از دیجی کالا، تنوع بی‌نظیر محصولات است. این فروشگاه اینترنتی طیف وسیعی از کالاها را در دسته‌های مختلف از جمله لوازم دیجیتال، لوازم خانگی، مد و پوشاک، لوازم آرایشی و بهداشتی، محصولات سلامت و زیبایی، و بسیاری از محصولات دیگر ارائه می‌دهد. به عنوان مثال، اگر به دنبال خرید یا بررسی قیمت گوشی باشید، دیجی کالا مجموعه‌ای از بهترین گوشی‌ها از برندهای معتبر اپل و سامسونگ مانند آیفون ۱۷، گوشی S25، گوشی‌های مختلف از برند شیائومی مانند شیائومی نوت ۱۴ و بسیاری از برندهای دیگر را در اختیار شما قرار می‌دهد. همچنین برای علاقه‌مندان به لوازم دیجیتال، این فروشگاه اینترنتی انواع لپ تاپ، تلویزیون، اسپیکر، و هندزفری بلوتوثی با کیفیت بالا را برای خرید آنلاین ارائه می‌دهد. دیجی کالا، مقصدی بی‌پایان برای خرید آسان، سریع و مطمئن است. راهی که هر آنچه نیاز دارید از قیمت لپ تاپ تا یک ایرپاد مطمئن را در اختیار شما قرار می‌دهد."
+      },
+      {
+        "type": "h3",
+        "text": "ارسال سریع و مطمئن کالا"
+      },
+      {
+        "type": "p",
+        "text": "یکی از مهم‌ترین دغدغه‌های کاربران خرید آنلاین، زمان تحویل کالا است. دیجی کالا برای حل این مشکل، گزینه‌های مختلف ارسال را در نظر گرفته است تا کاربران بتوانند بر اساس نیاز خود، روش ارسال مناسب را انتخاب کنند. به عنوان مثال، ارسال کالا به صورت تحویل امروز با ارسال سریع دیجی‌کالا، از جمله روش‌های خرید سریع از این فروشگاه اینترنتی است. این امکانات باعث می‌شود که خریداران بتوانند سفارش خود را در کوتاه‌ترین زمان ممکن دریافت کنند. علاوه بر این، در صورتی که کالای خریداری شده از لحاظ کیفیت یا هر دلیل دیگری رضایت مشتری را جلب نکرده باشد، دیجی کالا ضمانت بازگشت کالا را ارائه می‌دهد. این ویژگی موجب اعتماد بیشتر مشتریان به خرید آنلاین از فروشگاه اینترنتی دیجی کالا شده است."
+      },
+      {
+        "type": "h3",
+        "text": "تخفیف های ویژه و جشنواره ها"
+      },
+      {
+        "type": "p",
+        "text": "دیجی کالا به طور منظم جشنواره‌ها و تخفیف‌های ویژه‌ای را برگزار می‌کند که برای مشتریان فرصت خرید کالاهای باکیفیت با قیمت‌های مناسب به همراه خواهد داشت. این تخفیف‌ها در ایام خاص مانند بلک فرایدی یا همان حراج جمعه سیاه، خرید هدیه روز مادر و کادو روز پدر، شب یلدا و جشنواره‌های فصلی تابستان و زمستان توجه بسیاری از خریداران را جلب می‌کند. در این جشنواره‌ها، دیجی کالا تخفیف‌های عالی روی محصولات مختلف از جمله گوشی‌های موبایل، لپ تاپ‌ها، تلویزیون‌ها، و حتی محصولات مناسب سازمانی مثل پک هدیه یلدا ارائه می‌دهد. می‌توانید گوشی ایفون ۱۶ یا گوشی S25 را با تخفیف‌های ویژه خریداری کنید و از قیمت مناسب بهره‌مند شوید. دیجی کالا فراتر از یک فروشگاه اینترنتی، یک تجربه خرید مطمئن در بین کاربران مختلف بوده است که با ارائه بزرگ‌ترین تنوع کالا، قیمت‌های مختلف و خدماتی بی‌نقص، به مقصد اول خریداران آنلاین در ایران تبدیل شده است."
+      },
+      {
+        "type": "h2",
+        "text": "انواع محصولات فروشگاه دیجی کالا"
+      },
+      {
+        "type": "p",
+        "text": "دیجی کالا دارای محصولات متنوعی در گروه‌های مختلف است که خرید آنها بسیار راحت و سریع است. به عنوان مثال، اگر به دنبال قاب گوشی یا هندزفری بلوتوثی باشید، می‌توانید مدل‌های مختلف و برندهای گوناگونی را در این فروشگاه پیدا کنید."
+      },
+      {
+        "type": "h3",
+        "text": "موبایل و کالای دیجیتال"
+      },
+      {
+        "type": "p",
+        "text": "دیجی‌کالا انواع گوشی‌های هوشمند از برندهای معتبر جهانی مانند سامسونگ، اپل، شیائومی و هواوی را با مشخصات و قیمت‌های متنوع عرضه می‌کند. علاوه بر موبایل، دیجی‌کالا مجموعه‌ای از لوازم جانبی مانند هدفون، هندزفری، ساعت‌های هوشمند، تبلت‌ها و لپ تاپ را نیز در اختیار مشتریان قرار می‌دهد. با امکان مقایسه محصولات، مطالعه نظرات کاربران و دسترسی به جدیدترین مدل‌ها، دیجی‌کالا به یکی از مقاصد اصلی خرید آنلاین در حوزه موبایل و کالای دیجیتال تبدیل شده است. از دهه گذشته همواره دیجی کالا به عنوان اولین گزینه برای خرید گوشی سامسونگ، آیفون های اپل و گوشی شیائومی محسوب می‌شده است و تا امروز هم در عرضه این موبایل های محبوب به بازار، دیجی‌کالا اولین فروشگاه آنلاین بوده است."
+      },
+      {
+        "type": "h3",
+        "text": "کتاب و لوازم تحریر"
+      },
+      {
+        "type": "p",
+        "text": "کتاب، لوازم تحریر و هنر در دیجی کالا یک مجموعه بی‌نظیر از محصولات فرهنگی و هنری است که به علاقه‌مندان به کتابخوانی، هنر و نوشتن کمک می‌کند تا دنیای خود را گسترش دهند. از کتاب‌های چاپی و کتاب‌های صوتی گرفته تا مجلات خارجی و داخلی و آثار معروف‌ترین نویسندگان مثل سعدی، حافظ، مولانا و فروغ فرخزاد، تمامی نیازهای کتابخوان‌ها را پوشش می‌دهد. همچنین با مجموعه‌ای از لوازم تحریر، ابزار نقاشی و رنگ‌آمیزی، آلبوم‌های عکس و فرش‌های دستبافت، به شما این امکان را می‌دهد تا دنیای هنر و خلاقیت خود را به بهترین نحو پرورش دهید. همچنین هر سال تقریبا همزمان با تهران و نمایشگاه بین المللی کتاب، دیجی کالا نمایشگاه مجازی کتاب خود را برگزار می‌کند تا آنها که فرصت حضور در نمایشگاه را ندارند، بتوانند مجازی از کتاب ها بازدید و خرید کنند."
+      },
+      {
+        "type": "h3",
+        "text": "لوازم آرایشی و بهداشتی"
+      },
+      {
+        "type": "p",
+        "text": "در دسته محصولات آرایشی و بهداشتی، دیجی کالا مجموعه‌ای از بهترین و پرطرفدارترین برندهای جهانی را در اختیار کاربران قرار می‌دهد. محصولات متنوعی همچون مرطوب كننده‌ها، كرم پودر، ضدآفتاب، ريمل و رژلب از برندهایی مانند لورال، کلینیک و میبلین در دیجی کالا موجود هستند که برای هر سلیقه و نیاز قابل انتخاب هستند. علاوه بر این، شما می‌توانید محصولات مراقبت از پوست و مو مانند شامپو، کرم‌های ضد چروک و ماسک صورت را در این فروشگاه بیابید و خرید آنلاین خود را به راحتی انجام دهید. دیجی کالا، بزرگ‌ترین و معتبرترین فروشگاه آنلاین لوازم آرایشی ایران، جایی که تنوع، کیفیت و اطمینان در خرید یکجا جمع شده‌اند."
+      },
+      {
+        "type": "h3",
+        "text": "خرید آنلاین طلا و جواهرات"
+      },
+      {
+        "type": "p",
+        "text": "دیجی کالا به عنوان بزرگترین فروشگاه اینترنتی ایران، یکی از بهترین گزینه‌ها برای خرید طلا و جواهرات آنلاین است. شما می‌توانید خريد گردنبند طلا، انگشتر طلا، گوشواره زنانه طلا و دستبند طلا را با بهترین قیمت‌ طلا از دیجی کالا انجام دهید. این فروشگاه مجموعه‌ای از بهترین برندهای طلا و جواهرات را در اختیار مشتریان قرار داده است که انتخاب خرید را برای آنها بسیار آسان می‌کند. همچنین می‌توانید خريد سكه، و حتی ربع سكه را نیز از این فروشگاه با راحت‌ترین روش انجام دهید."
+      },
+      {
+        "type": "h3",
+        "text": "اسباب بازی"
+      },
+      {
+        "type": "p",
+        "text": "این قسمت شامل تمامی نیازهای ضروری برای مراقبت، بهداشت، سرگرمی و راحتی کودک از بدو تولد تا دوران کودکی است. از لوازم بهداشت و حمام کودک و نوزاد مانند پوشک، دستمال مرطوب، شامپو کودک، حوله و وان حمام نوزاد گرفته تا محصولات ویژه‌ای مثل مینی واش و شامپو کودک و نوزاد، همه در این مجموعه موجود هستند. همچنین برای راحتی بیشتر، انواع پوشاک و کفش کودک و نوزاد از لباس نوزادی تا کفش پسرانه، کوله پشتی پسرانه، لباس دخترانه و کفش دخترانه به صورت آنلاین در دسترس شما قرار دارند."
+      },
+      {
+        "type": "p",
+        "text": "کودکان به سرگرمی‌های ویژه نیاز دارند، از همین رو دیجی کالا مجموعه‌ای کامل از اسباب بازی‌ها از جمله پازل‌ها، لگو و ساختنی‌ها، عروسک‌ها، فیگورها و اسپینر‌ها را به شما ارائه می‌دهد."
+      },
+      {
+        "type": "h3",
+        "text": "لوازم خانگی و مبلمان"
+      },
+      {
+        "type": "p",
+        "text": "در دسته‌بندی لوازم خانگی، دیجی کالا محصولات متنوعی را ارائه می‌دهد که برای راحتی و زیبایی خانه و آشپزخانه شما طراحی شده‌اند. از جمله مبل راحتی، سرویس‌های خواب، آینه‌های دکوراتیو، و ظروف آشپزخانه که همگی از برندهای معتبر و با کیفیت تولید شده‌اند. شما می‌توانید قابلمه و تابه، یخچال، ماشین لباسشویی و بسیاری از لوازم خانگی دیگر را از دیجی کالا خریداری کنید."
+      },
+      {
+        "type": "p",
+        "text": "مبل‌های راحتی یکی از پرطرفدارترین محصولات خانگی در دیجی کالا هستند. این مبل‌ها در انواع طرح‌ها و رنگ‌ها و از برندهای معتبر ساخته شده‌اند که با هر دکوراسیونی هماهنگ می‌شوند. همچنین در دیجی کالا انواع سرویس خواب با کیفیت بالا و طراحی روز دنیا در دسترس است. علاوه بر این، اگر به دنبال آینه دکوراتیو یا سایر لوازم تزئینی منزل هستید، این فروشگاه بهترین انتخاب‌ها را به شما ارائه می‌دهد."
+      },
+      {
+        "type": "h3",
+        "text": "سوپرمارکت دیجی کالا"
+      },
+      {
+        "type": "p",
+        "text": "در دسته‌بندی خوراکی‌ها و کالاهای اساسی دیجی کالا، شما می‌توانید انواع محصولات ضروری و پرمصرف روزانه خود را پیدا کنید. از شیرینی و آجیل تا نان تازه و نبات خوشمزه گرفته و رب گوجه، ماکارونی، قند، رب انار، برنج و شکر و حتی شیر و لبنیات همه این محصولات با بالاترین کیفیت و از برندهای معتبر در دسترس شما قرار دارند. این مجموعه شامل همه آن چیزی است که برای تهیه یک وعده غذایی کامل و سالم به آن نیاز دارید. خرید از سوپر مارکت آنلاین کمک می‌کند که به راحتی و در کمترین زمان ممکن، مواد اولیه مورد نیاز خود را با قیمت‌های مناسب و با تضمین کیفیت دریافت کنید."
+      },
+      {
+        "type": "h3",
+        "text": "محصولات بومی و محلی"
+      },
+      {
+        "type": "p",
+        "text": "در این بخش از دیجی کالا، از برنج، روغن، عسل طبیعی، حلوا شکری، ارده و کنجد سنتی گرفته تا کیک و شیرینی خانگی، لواشک، برگه و آلوچه خانگی، محصولات اصیل و با کیفیت ارائه می‌شود. همچنین، انواع لبنیات سنتی، کره گیاهی و حیوانی محلی، خرمای محلی و خشکبار و آجیل سنتی به همراه غلات و حبوبات ارگانیک، ادویه‌ها و چاشنی‌های ارگانیک نظیر زعفران و زرشک ارگانیک از دیگر گزینه‌های این دسته هستند. برای علاقه‌مندان به دکوراسیون سنتی نیز، محصولاتی مانند لوستر دست ساز، مجسمه‌های سنتی، گلدان و تابلو سنتی، کاشی و آینه سنتی و ظروف آشپزخانه دست ساز از جنس سنتی وجود دارد که خانه شما را به محیطی گرم و اصیل تبدیل خواهد کرد."
+      },
+      {
+        "type": "h3",
+        "text": "ابزار آلات و تجهیزات"
+      },
+      {
+        "type": "p",
+        "text": "این بخش شامل ابزار برقی و غیر برقی در دیجی کالا مجموعه‌ای کامل از ابزارهای مورد نیاز برای پروژه‌های صنعتی، تعمیرات و ساخت می‌شود. از ابزارهای برقی مانند دریل، پیچ گوشتی، فرز، سنگ رومیزی، موتور برق و مکنده-دمنده گرفته تا ابزارهای غیر برقی مثل ابزار دستی، نردبان، اره و مجموعه ابزار، این دسته برای هر نیازی ابزار مناسب را ارائه می‌دهد. همچنین کمپرسور هوا، دستگاه جوش، هویه و ابزار برش و تراشکاری برای انجام کارهای دقیق صنعتی موجود است. به‌علاوه انواع لوازم روانکاری، چسب صنعتی، پیچ و مهره، ماسک تنفسی، لوازم ایمنی و کار و شیرآلات به تکمیل نیازهای شما برای کارهای ساختمانی و صنعتی کمک می‌کند. دیجی کالا یک راهکار کامل برای پروژه‌های حرفه‌ای و خانگی است."
+      },
+      {
+        "type": "h3",
+        "text": "پوشاک"
+      },
+      {
+        "type": "p",
+        "text": "از لباس‌های مردانه شامل هودی، سویشرت، ژاکت، پیراهن، شلوار جین، پالتو، کاپشن، کفش و اکسسوری تا پوشاک زنانه نظیر مانتو، بلوز، تیشرت، لباس مجلسی، لباس خواب، کاپشن و کفش زنانه، همگی در این دسته‌بندی موجود هستند. همچنین برای بچگانه‌ها، از لباس‌های راحتی و خواب، پوشاک ورزشی تا کفش و صندل بچگانه، به‌راحتی می‌توانید کالای مناسب را پیدا کنید. این بخش شامل برندهای معتبر مانند هامتو، چرم مشهد، اسمارا، کروم، گردیه و چرم عطارد است که پوشاک با کیفیت بالا را ارائه می‌دهند. خرید آنلاین لباس از دیجی‌کالا فرصتی برای همه فروشنده‌های شناخته‌شده کشور فراهم کرده است تا فروش اینترنتی بیشتری را تجربه کنند. همچنین شما کاربران می‌توانید طیف وسیعی از پوشاک، از جمله لباس‌های ورزشی و طرفداری مرتبط با تیم ملی ایران و تیم ملی برزیل، همچنین انواع ساعت برند را به‌راحتی و از طریق پروفایل همیشگی خود در دیجی‌کالا خریداری کنید. علاقه‌مندان به فوتبال می‌توانند جدیدترین محصولات و پوشاک هواداری تیم ملی ایران و تیم ملی آرژانتین را نیز در میان تنوع بالای کالاهای این فروشگاه آنلاین پیدا کنند."
+      },
+      {
+        "type": "h3",
+        "text": "تجهیزات پزشکی و سلامت"
+      },
+      {
+        "type": "p",
+        "text": "در این بخش از تجهیزات پزشکی مانند فشارسنج، ترازو، تب سنج و دماسنج گرفته تا دستگاه‌های تنفسی و تجهیزات حرفه‌ای پزشکی، موجود هستند. برای کنترل بیماری‌هایی مانند دیابت و سرماخوردگی، محصولات مناسبی از جمله کیسه نمک، رطوبت‌گیر، و دستگاه‌های تب سنج ارائه می‌شود. علاوه بر این، ماساژور و پد و کیسه آب گرم به شما کمک می‌کنند تا در خانه از تسکین درد و آرامش بیشتری برخوردار شوید."
+      },
+      {
+        "type": "h3",
+        "text": "محصولات ورزشی و سفر"
+      },
+      {
+        "type": "p",
+        "text": "دیجی کالا همچنین برای علاقه‌مندان به ورزش و سفر، محصولات متنوعی را در دسته‌بندی‌های مختلف ارائه می‌دهد مثل اطلاع از جدول و نتایج فوتبال. اگر به دنبال خرید وسایل ورزشی برای بدنسازی، ورزش‌های هوازی، یا کمپینگ هستید، دیجی کالا مجموعه‌ای از لوازم ورزشی از جمله وزنه، ساک ورزشی، قمقمه و بسیاری از لوازم دیگر را ارائه می‌دهد. همچنین شما می‌توانید برای سفرهای خود، ساک‌های مسافرتی، کوله پشتی‌های کوهنوردی و لوازم کمپینگ را از این فروشگاه خریداری کنید."
+      },
+      {
+        "type": "h3",
+        "text": "کارت هدیه"
+      },
+      {
+        "type": "p",
+        "text": "کارت هدیه‌ها راهی عالی برای هدیه دادن به عزیزانتان هستند و در دیجی کالا انواع مختلفی از آنها برای مناسبت‌های گوناگون وجود دارد. شما می‌توانید کارت هدیه فیزیکی دیجی کالا را به صورت عمومی یا براساس مناسبت‌های خاص همچون تولد یا سالگرد خریداری کنید. همچنین، کارت هدیه براساس قیمت امکان انتخاب هدیه‌ای مناسب با بودجه شما را فراهم می‌کند. علاوه بر کارت‌های فیزیکی، کارت هدیه الکترونیکی دیجی کالا هم برای افرادی که به دنبال یک گزینه سریع و آسان هستند، وجود دارد."
+      },
+      {
+        "type": "h3",
+        "text": "مکمل های غذایی"
+      },
+      {
+        "type": "p",
+        "text": "دیجی کالا همچنین به عنوان یکی از مراجع معتبر برای خرید مکمل نیز شناخته می‌شود. شما می‌توانید انواع قرص‌های ویتامین، منيزيم، زينك، ويتامين C و بسیاری از مکمل‌های دیگر را از برندهای معروف و معتبر در دیجی کالا پیدا کنید. این مکمل‌ها به سلامت شما کمک می‌کنند و برای تقویت سیستم ایمنی بدن یا افزایش انرژی و بهبود وضعیت پوست و مو مفید هستند."
+      },
+      {
+        "type": "p",
+        "text": "در آخر باید گفت خرید از دیجی کالا به دلیل تنوع بالای محصولات، خدمات ارسال سریع، تخفیف‌های ویژه، و امکان خرید آنلاین کالاهای متنوع از برندهای معتبر، یکی از بهترین انتخاب‌ها برای خریداران آنلاین در ایران است. با استفاده از خدمات دیجی کالا، خریدی مطمئن، سریع و راحت را تجربه خواهید کرد."
+      }
+    ],
+    "badges": [
+      {
+        "id": 1,
+        "title": "سامانه پایش مردمی رسانه‌های صوت و تصویر",
+        "image": "https://www.digikala.com/statics/img/png/sapra.png",
+        "url": "https://sapra.ir/"
+      },
+      {
+        "id": 2,
+        "title": "نشان ملی ثبت",
+        "image": "https://www.digikala.com/statics/img/png/rezi.png",
+        "url": ""
+      },
+      {
+        "id": 3,
+        "title": "نماد کسب و کار های مجازی",
+        "image": "https://www.digikala.com/statics/img/png/kasbokar.png",
+        "url": ""
+      },
+      {
+        "id": 4,
+        "title": "نماد اعتماد الکترونیک",
+        "image": "https://Trustseal.eNamad.ir/logo.aspx?id=19077&Code=sScdOJOzhFxtcEqkjP7P",
+        "url": "https://trustseal.enamad.ir/?id=19077&Code=sScdOJOzhFxtcEqkjP7P"
+      }
+    ],
+    "copyright": "برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.",
+    "partners": [
+      {
+        "id": 1,
+        "title": "مجله دیجی‌کالا مگ",
+        "url": "https://www.digikala.com/mag/",
+        "image": "https://dkstatics-public.digikala.com/digikala-static/4801e91f7b612493262538e3fad2d1d268f7e9f0_1758969413.svg"
+      },
+      {
+        "id": 2,
+        "title": "دیجی‌پی",
+        "url": "https://www.mydigipay.com/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/digipay.svg"
+      },
+      {
+        "id": 3,
+        "title": "دیجی‌استایل",
+        "url": "https://www.digistyle.com/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/digistyle.svg"
+      },
+      {
+        "id": 4,
+        "title": "دیجی‌پلاس",
+        "url": "https://www.digikala.com/plus/landing/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/digiplus.svg"
+      },
+      {
+        "id": 5,
+        "title": "دیجی‌کلاب",
+        "url": "https://www.digikala.com/digiclub/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/digiclub.svg"
+      },
+      {
+        "id": 6,
+        "title": "دیجی‌کالا جت",
+        "url": "https://digikalajet.com/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/jet.svg"
+      },
+      {
+        "id": 7,
+        "title": "دیجی‌کالا ادز",
+        "url": "https://www.digikalaads.com/",
+        "image": "https://dkstatics-public.digikala.com/digikala-static/6d8b4e67f90b80c581949f1e680aeaa60fa49d0e_1770621595.svg"
+      },
+      {
+        "id": 8,
+        "title": "دیجی‌کالا مهر",
+        "url": "https://mehr.digikala.com/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/digiMehr.svg"
+      },
+      {
+        "id": 9,
+        "title": "دیجی‌نکست",
+        "url": "https://diginext.ir/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/diginext.svg"
+      },
+      {
+        "id": 10,
+        "title": "دیجی‌اکسپرس",
+        "url": "https://digiexpress.ir/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/digiexpress.svg"
+      },
+      {
+        "id": 11,
+        "title": "گنجه",
+        "url": "https://ganje.net/?utm_source=Digikala_web&utm_medium=Footer",
+        "image": "https://www.digikala.com/statics/img/svg/footer/ganjeh.svg"
+      },
+      {
+        "id": 12,
+        "title": "دیجی‌فای",
+        "url": "https://digify.shop/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/digify.svg"
+      },
+      {
+        "id": 13,
+        "title": "اسمارتک",
+        "url": "https://smartech.ir/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/smartech.svg"
+      },
+      {
+        "id": 14,
+        "title": "دیجی‌کالا بیزینس",
+        "url": "https://b2b.digikala.com/?utm_source=DK&utm_medium=FooterBadge&utm_campaign=DKtraffic",
+        "image": "https://www.digikala.com/statics/img/svg/footer/digikala-business.svg"
+      },
+      {
+        "id": 15,
+        "title": "دیجی‌کالا سرویس",
+        "url": "https://service.digikala.com/",
+        "image": "https://dkstatics-public.digikala.com/digikala-static/d71fbbf34e40eca5197d564c70539434cc21a37c_1758969423.svg"
+      },
+      {
+        "id": 16,
+        "title": "میاره",
+        "url": "https://www.miare.ir/",
+        "image": "https://dkstatics-public.digikala.com/digikala-static/e7661075abe11edde27e6d550c3507756122e1cf_1758969434.svg"
+      },
+      {
+        "id": 17,
+        "title": "ویدومارت",
+        "url": "https://www.vidomart.shop",
+        "image": "https://dkstatics-public.digikala.com/digikala-static/9814bb50f330280b887fe545a6074cc72f33388e_1758978427.svg"
+      },
+      {
+        "id": 18,
+        "title": "طلای دیجیتال",
+        "url": "https://www.digikala.com/wealth/my-assets/",
+        "image": "https://www.digikala.com/statics/img/svg/footer/digital-gold.svg"
+      }
+    ]
+  },
+  "components": {
+    "swiper_1": [
+      {
+        "id": 1,
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/4fa2bad30958031215a123144cbaee0e4bc224be_1791734996.jpg?x-oss-process=image/quality,q_80/format,webp",
+        "alt": "سوپرمارکت"
+      },
+      {
+        "id": 2,
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/ce6e4cf2430d69a7e0283e2d3d4e1cca04ab7d8a_1793804224.jpg?x-oss-process=image/quality,q_80/format,webp",
+        "alt": "شگفت‌انگیزها"
+      },
+      {
+        "id": 3,
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/a9d1ee33a36024fc905c2a1bc45bcb2b812c7595_1793791402.jpg?x-oss-process=image/quality,q_80/format,webp",
+        "alt": "دیجی‌استایل"
+      },
+      {
+        "id": 4,
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/4b9f36051c8d9ff10364582837c750ae3512b870_1793197335.jpg?x-oss-process=image/quality,q_80/format,webp",
+        "alt": "پرفروش‌ترین‌ها"
+      },
+      {
+        "id": 5,
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/4b9f36051c8d9ff10364582837c750ae3512b870_1793197335.jpg?x-oss-process=image/quality,q_80/format,webp",
+        "alt": "طلا و نقره دیجیتال"
+      }
+    ],
+    "shortcut": [
+      {
+        "title": "دیجی‌استایل",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/326f30e8e54d9ebb9ee57932d3d41de4907aed11_1791640382.png"
+      },
+      {
+        "title": "طلا و نقره دیجیتال",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/d66e60056aa3aef7648b73a51dfad05f00d4364b_1790864775.png"
+      },
+      {
+        "title": "سوپرمارکت",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/adebec16b689d713eb4a4e9b9e3473a92b39134f_1790155115.png"
+      },
+      {
+        "title": "وام بانکی، اعتبار خرید",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/1d7ecb2d442364097e01a04c28490d4d06e0fd3a_1784998161.png"
+      },
+      {
+        "title": "نوشیدنی گرم",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/765fb0480dfa26ace5d7dd3ac8d5312461b74101_1793692036.jpg"
+      },
+      {
+        "title": "عطر خوش‌قیمت",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/f3a35b27e3080b6834faf9dbee3e174e81140e1a_1746616168.jpg"
+      },
+      {
+        "title": "تخفیف روشنایی",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/1c32e9cef8f896485b27dc02f2013d836483f886_1793633128.jpg"
+      },
+      {
+        "title": "ارسال ۳ ساعته",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/956a46122ac0902eb6804805c28eaad59bba92d2_1779621365.png"
+      },
+      {
+        "title": "در دیجی‌کالا بفروش",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/f0909d6eae7ee548665693cfbe823b078cf70ede_1786811818.png"
+      },
+      {
+        "title": "بیشتر",
+        "image": ""
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "title": "موبایل",
+        "url": "https://www.digikala.com/search/category-mobile/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/09a98a13c782e12a245930b4515d243b17734a33_1740821989.jpg"
+      },
+      {
+        "id": 2,
+        "title": "لپ تاپ",
+        "url": "https://www.digikala.com/search/category-notebook-netbook-ultrabook/",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/7cf1fed6dac6bdfd1b888db6bf8f443ea680244b_1748692252.jpg"
+      },
+      {
+        "id": 3,
+        "title": "کالای دیجیتال",
+        "url": "https://www.digikala.com/search/category-electronic-devices/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/151ec29bae111afd3b6a0e71cec5c4c26f1c3014_1740821986.jpg"
+      },
+      {
+        "id": 4,
+        "title": "خانه و آشپزخانه",
+        "url": "https://www.digikala.com/search/category-home-and-kitchen/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/8a042388b93c5116604f35092a1fb35f8f0756be_1740821985.jpg"
+      },
+      {
+        "id": 5,
+        "title": "لوازم خانگی برقی",
+        "url": "https://www.digikala.com/search/category-home-appliance/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/d825f64f509cd5067a9022528c465e8ca705f60d_1740821988.jpg"
+      },
+      {
+        "id": 6,
+        "title": "آرایشی بهداشتی",
+        "url": "https://www.digikala.com/search/category-personal-appliance/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/b196bbdea97f57bfac02dc1666d7401b16ee4bcb_1740821984.jpg"
+      },
+      {
+        "id": 7,
+        "title": "مد و پوشاک",
+        "url": "https://www.digikala.com/landing/apparel/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/b3d4eaefebe67ab8d849296ea2e7e113cde8094c_1740821988.jpg"
+      },
+      {
+        "id": 8,
+        "title": "طلا و نقره",
+        "url": "https://www.digikala.com/landing/gold/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/78135af4274ad7b7fcdaec7e5912689e5f5db96a_1740821985.jpg"
+      },
+      {
+        "id": 9,
+        "title": "خودرو و موتور",
+        "url": "https://www.digikala.com/search/category-vehicles-spare-parts/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/03552aa1293fec9f43477814ca62afdacdac18e3_1740821990.jpg"
+      },
+      {
+        "id": 10,
+        "title": "ابزارآلات",
+        "url": "https://www.digikala.com/search/category-vehicles/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/fb6303218362cd2c48b40fef5da89ad33a5c04d7_1740821984.jpg"
+      },
+      {
+        "id": 11,
+        "title": "پزشکی و سلامت",
+        "url": "https://www.digikala.com/search/category-health-care/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/deb3f514c62761797eb6a49e1559268b8bce3219_1740821984.jpg"
+      },
+      {
+        "id": 12,
+        "title": "شهر کتاب و هنر",
+        "url": "https://www.digikala.com/search/category-book-and-media/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/0cdf9c404e509371c3177a334be948a7e500419c_1740821987.jpg"
+      },
+      {
+        "id": 13,
+        "title": "ورزش و سفر",
+        "url": "https://www.digikala.com/search/category-sport-entertainment/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/4d4582205d0d5045c2bd94c5e910bbb49ae4fd4e_1740821990.jpg"
+      },
+      {
+        "id": 14,
+        "title": "کارت هدیه",
+        "url": "https://www.digikala.com/main/dk-ds-gift-card/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/f35b3eba7de8bf2432fff4f53abfa8cbaa6e71d6_1740821985.jpg"
+      },
+      {
+        "id": 15,
+        "title": "سوپرمارکتی",
+        "url": "https://www.digikala.com/search/category-food-beverage/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/7adb0cc6edc18a6d04b9ba3bdd424b1bcce47848_1740821986.jpg"
+      },
+      {
+        "id": 16,
+        "title": "اسباب‌بازی و کودک",
+        "url": "https://www.digikala.com/search/category-mother-and-child/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/6f5284dccdb280616bbfe58533ecc483de4639af_1740821987.jpg"
+      },
+      {
+        "id": 17,
+        "title": "بومی و محلی",
+        "url": "https://www.digikala.com/search/category-rural-products/",
+        "image": "https://dkstatics-public.digikala.com/digikala-admin-landing/9a4dfac524f8a865f9f69e38d5434fa69fe63e3b_1740821990.jpg"
+      },
+      {
+        "id": 18,
+        "title": "پت شاپ",
+        "url": "https://www.digikala.com/search/category-pet/",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/6f236efd9caae4d1c3177f37c483aa44c3092b6a_1753614680.jpg"
+      }
+    ],
+    "popularProducts": [
+      {
+        "id": 1,
+        "title": "سربند عزاداری مدل یا حیدر کرار بسته 10 عددی",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/a8493d2a7a1a9507f5a9b8781956ac60fc008768_1689595723.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-12072355/"
+      },
+      {
+        "id": 2,
+        "title": "سربند عزاداری مدل یاحسین بسته 5 عددی",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/40bf733188f8fb24227256ee64ed6b348c817a70_1689066538.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-11997715/"
+      },
+      {
+        "id": 3,
+        "title": "کتاب هنر جذب مخاطب اثر کورش اکبری نشر گوهر دانش",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/4783dce3568f27d055883f2d98a42d8ec557f4fe_1608641002.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-4052806/"
+      },
+      {
+        "id": 4,
+        "title": "جاکلیدی گالری باجو طرح کیلیان امباپه کد mbappe 74",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/6e0cc86711a92deef9e9b414d83a0478a0132928_1699017962.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-13227771/"
+      },
+      {
+        "id": 5,
+        "title": "محافظ صفحه نمایش نیکسو مدل 2SNs مناسب برای گوشی موبایل شیائومی Poco X3 به همراه محافظ پشت گوشی",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/3b53f8171da43b1bdd821aebe0a3567b75d40d1f_1685002441.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-11440449/"
+      },
+      {
+        "id": 6,
+        "title": "کوسن مدل کمپینگ Camping کد KO483",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/9116ef2cd78dc2d325c42cc3c07f32422bccbe83_1714571450.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-15328352/"
+      },
+      {
+        "id": 7,
+        "title": "جاشمعی مدل چوبی طرح گل و مرغ ch5 کد 1095",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/cfee0a7764002f2bacead629ca5075dc5b211ff1_1697299573.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-12987649/"
+      },
+      {
+        "id": 8,
+        "title": "لوبیا چیتی درشت بهاران - 2 کیلوگرم",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/d9fcdd95d10010233849f37ad23921c94086664e_1710150748.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-14790699/"
+      },
+      {
+        "id": 9,
+        "title": "جاکلیدی مبین ایده مدل کارتونی h15",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/780ae1b38e665bb57511215a39430c688575530e_1715588933.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-15432286/"
+      },
+      {
+        "id": 10,
+        "title": "جاکلیدی مبین ایده مدل آیت الکرسی m10 کد 399",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/9eb481a4bf386f7e3e48e2b95ef67cbb3ec0ac59_1704114288.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-13960119/"
+      },
+      {
+        "id": 11,
+        "title": "جاکلیدی مبین ایده مدل الله m10 کد 835",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/45f951a60e8fe4a4e747cabd433835025dced1f0_1704115597.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-13960354/"
+      },
+      {
+        "id": 12,
+        "title": "بالش ناریکو مدل نوزاد طرح خرگوش کد 04653",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/a79eb54bbe3849e061528782170fbfc03a580780_1710597618.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-14854704/"
+      },
+      {
+        "id": 13,
+        "title": "جا کلیدی مبین ایده مدل فانتزی کد 131",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/95799bff5ac88b19c90006a6d0af7c0996ab0d2b_1704970410.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-14059754/"
+      },
+      {
+        "id": 14,
+        "title": "پایه نگهدارنده گوشی موبایل مبین ایده مدل فانتزی sh کد 7",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/0fa71c3392a50829dc6256bad13f7d3ebe9d9601_1695737509.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-12791456/"
+      },
+      {
+        "id": 15,
+        "title": "جا کلیدی مبین ایده مدل مذهبی m10 کد 1101",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/5c61962b0f13617a06b37dc4753c7b7b4206ea18_1707736518.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80",
+        "url": "https://www.digikala.com/product/dkp-14399049/"
+      }
+    ],
+      "images": [
+      {
+        "title": "نسکافه",
+        "src": "/image/rowImages/1e_1793170577.webp"
+      },
+      {
+        "title": "سریتا",
+        "src": "/image/rowImages/38416.webp"
+      },
+      {
+        "title": "ورزش در خانه",
+        "src": "/image/rowImages/1793620656.webp"
+      },
+      {
+        "title": "کالای سوپرمارکتی خارجی",
+        "src": "/image/rowImages/bade0019_1793178246.webp"
+      }
+    ],
+    "bannerImg": [
+      {
+        "title": "نسکافه",
+        "src": "/image/rowImages/cd700ee25a7d90a_1793191152.webp"
+      },
+      {
+        "title": "سریتا",
+        "src": "/image/rowImages/a56055bfd0f6f99e16_1793699121.webp"
+      }
+    ]
+      
+  },
   "products": [
-    {
-      "id": "1",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
-      "discription": "هدفون بی‌سیم با صدای شفاف و طراحی راحت",
-      "discount": 25,
-      "preprice": 2400000,
-      "price": 1800000
-    },
-    {
-      "id": "2",
-      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
-      "discription": "ساعت مچی با طراحی مینیمال",
-      "discount": 15,
-      "preprice": 1800000,
-      "price": 1530000
-    },
-    {
-      "id": "3",
-      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
-      "discription": "کفش اسپرت سبک مناسب استفاده روزانه",
-      "discount": 30,
-      "preprice": 3200000,
-      "price": 2240000
-    },
-    {
-      "id": "4",
-      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80",
-      "discription": "گوشی هوشمند با نمایشگر باکیفیت",
-      "discount": 10,
-      "preprice": 12500000,
-      "price": 11250000
-    },
-    {
-      "id": "5",
-      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
-      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
-      "discount": 20,
-      "preprice": 2100000,
-      "price": 1680000
-    },
-    {
-      "id": "6",
-      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
-      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
-      "discount": 20,
-      "preprice": 2100000,
-      "price": 1680000
-    },
-    {
-      "id": "7",
-      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
-      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
-      "discount": 20,
-      "preprice": 2100000,
-      "price": 1680000
-    },
-    {
-      "id": "8",
-      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
-      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
-      "discount": 20,
-      "preprice": 2100000,
-      "price": 1680000
-    },
-    {
-      "id": "9",
-      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
-      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
-      "discount": 20,
-      "preprice": 2100000,
-      "price": 1680000
-    },
-    {
-      "id": "10",
-      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
-      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
-      "discount": 20,
-      "preprice": 2100000,
-      "price": 1680000
-    },
-    {
-      "id": "11",
-      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
-      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
-      "discount": 20,
-      "preprice": 2100000,
-      "price": 1680000
-    },
-    {
-      "id": "12",
-      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80",
-      "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
-      "discount": 20,
-      "preprice": 2100000,
-      "price": 1680000
-    }
-  ],
+  {
+    "id": "1",
+    "code": 1,
+    "image": "/image/products/product.webp",
+    "discription": "ساعت مچی با طراحی مینیمال",
+    "discount": 15,
+    "preprice": 200000,
+    "category": "مد و پوشاک"
+  },
+  {
+    "id": "2",
+    "code": 2,
+    "image": "/image/products/product.webp",
+    "discription": "ساعت مچی با طراحی مینیمال",
+    "discount": 15,
+    "preprice": 200000,
+    "category": "مد و پوشاک"
+  },
+  {
+    "id": "3",
+    "code": 3,
+    "image": "/image/products/product.webp",
+    "discription": "کفش اسپرت سبک مناسب استفاده روزانه",
+    "discount": 30,
+    "preprice": 3200000,
+    "category": "مد و پوشاک"
+  },
+  {
+    "id": "4",
+    "code": 4,
+    "image": "/image/products/product.webp",
+    "discription": "گوشی هوشمند با نمایشگر باکیفیت",
+    "discount": 10,
+    "preprice": 12500000,
+    "category": "کالای دیجیتال"
+  },
+  {
+    "id": "5",
+    "code": 5,
+    "image": "/image/products/product.webp",
+    "discription": "عطر با رایحه ماندگار مناسب استفاده روزانه",
+    "discount": 20,
+    "preprice": 2100000,
+    "category": "آرایشی و بهداشتی"
+  },
+  {
+    "id": "6",
+    "code": 6,
+    "image": "/image/products/product.webp",
+    "discription": "کرم مرطوب‌کننده صورت مناسب انواع پوست",
+    "discount": 10,
+    "preprice": 650000,
+    "category": "آرایشی و بهداشتی"
+  },
+  {
+    "id": "7",
+    "code": 7,
+    "image": "/image/products/product.webp",
+    "discription": "شامپو تقویت‌کننده مو بدون سولفات",
+    "discount": 15,
+    "preprice": 420000,
+    "category": "آرایشی و بهداشتی"
+  },
+  {
+    "id": "8",
+    "code": 8,
+    "image": "/image/products/product.webp",
+    "discription": "رژ لب مات با ماندگاری بالا",
+    "discount": 20,
+    "preprice": 380000,
+    "category": "آرایشی و بهداشتی"
+  },
+  {
+    "id": "9",
+    "code": 9,
+    "image": "/image/products/product.webp",
+    "discription": "کرم ضدآفتاب SPF50 مناسب پوست‌های حساس",
+    "discount": 30,
+    "preprice": 550000,
+    "category": "آرایشی و بهداشتی"
+  },
+  {
+    "id": "10",
+    "code": 10,
+    "image": "/image/products/product.webp",
+    "discription": "مسواک برقی با سه حالت تمیزکنندگی",
+    "discount": 25,
+    "preprice": 1500000,
+    "category": "آرایشی و بهداشتی"
+  },
+  {
+    "id": "11",
+    "code": 11,
+    "image": "/image/products/product.webp",
+    "discription": "فشارسنج دیجیتال بازویی با حافظه",
+    "discount": 10,
+    "preprice": 1900000,
+    "category": "سلامتی و پزشکی"
+  },
+  {
+    "id": "12",
+    "code": 12,
+    "image": "/image/products/product.webp",
+    "discription": "تب‌سنج دیجیتال با پاسخ‌دهی سریع",
+    "discount": 20,
+    "preprice": 450000,
+    "category": "سلامتی و پزشکی"
+  },
+  {
+    "id": "13",
+    "code": 13,
+    "image": "/image/products/product.webp",
+    "discription": "پاور بانک ۲۰۰۰۰ میلی‌آمپر شارژ سریع",
+    "discount": 10,
+    "preprice": 900000,
+    "category": "کالای دیجیتال"
+  },
+  {
+    "id": "14",
+    "code": 14,
+    "image": "/image/products/product.webp",
+    "discription": "ساعت هوشمند با قابلیت پایش ضربان قلب",
+    "discount": 20,
+    "preprice": 4500000,
+    "category": "کالای دیجیتال"
+  },
+  {
+    "id": "15",
+    "code": 15,
+    "image": "/image/products/product.webp",
+    "discription": "اسپیکر بلوتوثی ضدآب و قابل حمل",
+    "discount": 15,
+    "preprice": 1600000,
+    "category": "کالای دیجیتال"
+  },
+  {
+    "id": "16",
+    "code": 16,
+    "image": "/image/products/product.webp",
+    "discription": "لپ‌تاپ سبک مناسب کار و تحصیل",
+    "discount": 5,
+    "preprice": 38000000,
+    "category": "کالای دیجیتال"
+  },
+  {
+    "id": "17",
+    "code": 17,
+    "image": "/image/products/product.webp",
+    "discription": "کوله‌پشتی ضدآب با جای لپ‌تاپ",
+    "discount": 25,
+    "preprice": 1200000,
+    "category": "مد و پوشاک"
+  },
+  {
+    "id": "18",
+    "code": 18,
+    "image": "/image/products/product.webp",
+    "discription": "کاپشن زمستانی سبک و گرم",
+    "discount": 20,
+    "preprice": 2800000,
+    "category": "مد و پوشاک"
+  },
+  {
+    "id": "19",
+    "code": 19,
+    "image": "/image/products/product.webp",
+    "discription": "عینک آفتابی با لنز پلاریزه",
+    "discount": 10,
+    "preprice": 950000,
+    "category": "مد و پوشاک"
+  },
+  {
+    "id": "20",
+    "code": 20,
+    "image": "/image/products/product.webp",
+    "discription": "کیف پول چرم طبیعی",
+    "discount": 10,
+    "preprice": 700000,
+    "category": "مد و پوشاک"
+  },
+  {
+    "id": "21",
+    "code": 21,
+    "image": "/image/products/product.webp",
+    "discription": "پالس اکسیمتر انگشتی دیجیتال",
+    "discount": 15,
+    "preprice": 800000,
+    "category": "سلامتی و پزشکی"
+  },
+  {
+    "id": "22",
+    "code": 22,
+    "image": "/image/products/product.webp",
+    "discription": "مولتی‌ویتامین روزانه بسته ۶۰ عددی",
+    "discount": 10,
+    "preprice": 700000,
+    "category": "سلامتی و پزشکی"
+  },
+  {
+    "id": "23",
+    "code": 23,
+    "image": "/image/products/product.webp",
+    "discription": "ماسک سه‌لایه بسته ۵۰ عددی",
+    "discount": 10,
+    "preprice": 250000,
+    "category": "سلامتی و پزشکی"
+  },
+  {
+    "id": "24",
+    "code": 24,
+    "image": "/image/products/product.webp",
+    "discription": "قندسنج دیجیتال همراه با نوار تست",
+    "discount": 12,
+    "preprice": 1300000,
+    "category": "سلامتی و پزشکی"
+  },
+  {
+    "id": "25",
+    "code": 25,
+    "image": "/image/products/product.webp",
+    "discription": "ست ساختنی لگو ۵۰۰ قطعه‌ای",
+    "discount": 20,
+    "preprice": 2600000,
+    "category": "اسباب بازی"
+  },
+  {
+    "id": "26",
+    "code": 26,
+    "image": "/image/products/product.webp",
+    "discription": "ماشین کنترلی شارژی با برد بلند",
+    "discount": 25,
+    "preprice": 1400000,
+    "category": "اسباب بازی"
+  },
+  {
+    "id": "27",
+    "code": 27,
+    "image": "/image/products/product.webp",
+    "discription": "عروسک دختر با لباس‌های قابل تعویض",
+    "discount": 10,
+    "preprice": 900000,
+    "category": "اسباب بازی"
+  },
+  {
+    "id": "28",
+    "code": 28,
+    "image": "/image/products/product.webp",
+    "discription": "پازل ۱۰۰۰ تکه تصویر طبیعت",
+    "discount": 15,
+    "preprice": 450000,
+    "category": "اسباب بازی"
+  },
+  {
+    "id": "29",
+    "code": 29,
+    "image": "/image/products/product.webp",
+    "discription": "بازی فکری خانوادگی چندنفره",
+    "discount": 30,
+    "preprice": 1100000,
+    "category": "اسباب بازی"
+  },
+  {
+    "id": "30",
+    "code": 30,
+    "image": "/image/products/product.webp",
+    "discription": "عروسک پولیشی خرس بزرگ",
+    "discount": 20,
+    "preprice": 600000,
+    "category": "اسباب بازی"
+  }
+],
   "$schema": "./node_modules/json-server/schema.json"
 }
